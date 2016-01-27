@@ -3,3 +3,5 @@
 history
 url
 el-get/*
+elpa/archives/*
+elpa/gnupg
