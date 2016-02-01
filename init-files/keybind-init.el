@@ -30,6 +30,13 @@
 (global-unset-key (kbd "M-h"))
 (global-unset-key (kbd "M-t"))
 
+
+
+(define-key minibuffer-local-map (kbd "C-S-t") 'previous-history-element)
+(define-key minibuffer-local-map (kbd "C-S-h") 'next-history-element)
+
+
+
 ;; (makunbound 'overriding-minor-mode-map)
 (define-minor-mode overriding-minor-mode
   "force keybinds"             ; description
