@@ -26,7 +26,7 @@
 (setq shift-select-mode nil)
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
-(setq default-tab-width 2)
+;;;(setq default-tab-width 2)
 (setq dired-dwim-target t)
 (require 'editorconfig)
 (setq edconf-exec-path "/usr/bin/editorconfig")
