@@ -18,6 +18,7 @@
 	   'whitespace-init
 		 'shell-mode-init
 		 'skk-init
+     'edit-text-object
 		 ))
 
 (mapcar 'require files-to-require)
