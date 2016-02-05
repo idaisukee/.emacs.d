@@ -18,5 +18,8 @@
 
 ;;;(el-get-bundle! magit)
 
+(if (string= emacs-version "24.5.1")
+    (el-get-bundle! magit)
+  nil)
 
 (provide 'el-get-init)
