@@ -8,6 +8,9 @@
 (global-unset-key [f10])
 (add-hook 'isearch-mode-hook '(lambda ()
 				(define-key isearch-mode-map (kbd "C-S-s") 'isearch-repeat-backward)))
+(add-hook 'helm-mode-hook '(lambda ()
+			     (define-key helm-map (kbd "C-h") 'helm-next-line)
+			     (define-key helm-map (kbd "C-t") 'helm-previous-line)))
 (global-unset-key (kbd "C-\\"))
 (global-unset-key (kbd "C--"))
 
