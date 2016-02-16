@@ -92,7 +92,7 @@
 	(,(kbd "<f8>") . toggle-and-print-jitai)
 	(,(kbd "C-<f8>") . show-lub)
 ;;;(,[f9] . save-buffer)
-	(,(kbd "<f9>") . prepare-article)
+	(,(kbd "<f9>") . prepare-article-2)
 	(,(kbd "<f10>") . delete-window)
 	(,(kbd "<f11>") . dired-pwd)
 	(,(kbd "C-<f11>") . dired)

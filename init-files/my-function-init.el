@@ -52,6 +52,17 @@ article:
     - public
   tag:"))
 
+(defun prepare-article-2 nil
+	(interactive)
+	(insert "- time: ")
+	(insert-year-date-time)
+	(insert "
+  main: | 
+  range:
+    - public
+  tag:"))
+
+
 
 (defun dired-pwd nil
 	(interactive)
