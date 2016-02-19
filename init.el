@@ -19,6 +19,7 @@
 		 'shell-mode-init
 		 'skk-init
      'edit-text-object
+     'web-mode-init
 		 ))
 
 (mapcar 'require files-to-require)
