@@ -114,6 +114,7 @@
 	(,(kbd "C-t") . previous-line)
 	(,(kbd "C-n") . forward-char)
 	(,(kbd "M-o") . find-file)
+	(,(kbd "M-O") . helm-for-files)
 	(,(kbd "C-S-d") . backward-word)
 	(,(kbd "C-S-n") . forward-word)
 	(,(kbd "M-o") . find-file)
