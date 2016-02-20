@@ -24,6 +24,8 @@
 (global-unset-key (kbd "C-_"))
 (global-unset-key (kbd "C-p"))
 (global-unset-key (kbd "C-f"))
+(global-unset-key (kbd "C-v"))
+
 
 (define-key minibuffer-local-map (kbd "C-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
