@@ -24,6 +24,8 @@
 (global-unset-key (kbd "C-_"))
 (global-unset-key (kbd "C-p"))
 (global-unset-key (kbd "C-f"))
+(global-unset-key (kbd "C-v"))
+
 
 (define-key minibuffer-local-map (kbd "C-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
@@ -112,6 +114,7 @@
 	(,(kbd "C-t") . previous-line)
 	(,(kbd "C-n") . forward-char)
 	(,(kbd "M-o") . find-file)
+	(,(kbd "M-O") . helm-for-files)
 	(,(kbd "C-S-d") . backward-word)
 	(,(kbd "C-S-n") . forward-word)
 	(,(kbd "M-o") . find-file)

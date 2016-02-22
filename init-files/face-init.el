@@ -19,7 +19,7 @@
  '(font-lock-comment-face ((t (:foreground "dark turquoise" :slant normal))))
  '(font-lock-constant-face ((t (:foreground "violet" :weight bold))))
  '(font-lock-function-name-face ((t (:foreground "orange" :height 1.1))))
- '(font-lock-string-face ((t (:foreground "hot pink"))))
+ '(font-lock-string-face ((t (:foreground "skyblue"))))
  '(font-lock-variable-name-face ((t (:foreground "DodgerBlue1"))))
  '(mode-line ((t (:background "blue violet" :foreground "white"))))
  '(mode-line-buffer-id ((t (:background "white" :foreground "black" :weight normal))))
