@@ -18,5 +18,8 @@
 (defalias 'cr 'comment-region)
 (defalias 'ucr 'uncomment-region)
 (defalias 's 'smart-compile)
+(defalias 'rs 'replace-string)
+(defalias 'gl 'goto-line)
+
 
 (provide 'alias-init)
