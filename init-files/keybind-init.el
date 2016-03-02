@@ -68,6 +68,7 @@
 ;	(,(kbd "C-o e") . skk-katakana-set)
 ;	(,(kbd "C-o u") . skk-latin-mode)
 	(,(kbd "C-z") . skk-toggle-kana-and-latin)
+	(,(kbd "C-S-z") . toggle-and-print-jitai)
 	(,(kbd "C-S-v") . scroll-down-command)
 	(,(kbd "<backtab>") . save-buffer)
 	(,(kbd "C-<tab>") . save-buffer)
