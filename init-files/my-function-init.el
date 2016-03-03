@@ -41,22 +41,22 @@
   (insert (format-time-string "%Y %m%d %H%M" (current-time))))
 
 (defun prepare-article nil
-	(interactive)
-	(insert "---
+  (interactive)
+  (insert "---
 article:
   time: ")
-	(insert-year-date-time)
-	(insert "
+  (insert-year-date-time)
+  (insert "
   main: | 
   range:
     - public
   tag:"))
 
 (defun prepare-article-2 nil
-	(interactive)
-	(insert "- time: ")
-	(insert-year-date-time)
-	(insert "
+  (interactive)
+  (insert "- time: ")
+  (insert-year-date-time)
+  (insert "
   main: | 
   range:
     - public
@@ -65,8 +65,8 @@ article:
 
 
 (defun dired-pwd nil
-	(interactive)
-	(dired default-directory))
+  (interactive)
+  (dired default-directory))
 
 (provide 'my-function-init)
 

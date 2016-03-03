@@ -6,12 +6,12 @@
 (require 'skk)
 
 (add-hook 'skk-j-mode-hook
-	  '(lambda ()
-	     (define-key skk-j-mode-map (kbd "S-<tab>") nil)
-	     (define-key skk-j-mode-map (kbd "S-<tab>") 'skk-j-mode-save-buffer)
-	     (define-key skk-j-mode-map (kbd "<backtab>") nil)
-	     (define-key skk-j-mode-map (kbd "<backtab>") 'skk-j-mode-save-buffer)
-	     (define-key skk-j-mode-map (kbd "C-<tab>") 'skk-j-mode-save-buffer)))
+ '(lambda ()
+   (define-key skk-j-mode-map (kbd "S-<tab>") nil)
+   (define-key skk-j-mode-map (kbd "S-<tab>") 'skk-j-mode-save-buffer)
+   (define-key skk-j-mode-map (kbd "<backtab>") nil)
+   (define-key skk-j-mode-map (kbd "<backtab>") 'skk-j-mode-save-buffer)
+   (define-key skk-j-mode-map (kbd "C-<tab>") 'skk-j-mode-save-buffer)))
 
 (defun skk-j-mode-save-buffer nil
   (interactive)
