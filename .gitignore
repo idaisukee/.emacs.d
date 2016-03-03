@@ -5,3 +5,5 @@ url
 el-get/*
 elpa/archives/*
 elpa/gnupg
+recentf
+tramp
