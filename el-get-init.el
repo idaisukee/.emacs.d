@@ -16,14 +16,16 @@
 (el-get-bundle editorconfig)
 (el-get-bundle evil :info nil)
 (el-get-bundle! fxbois/web-mode)
-(el-get-bundle! flycheck/flycheck)
-(el-get-bundle! elpa:let-alist)
-(el-get-bundle! elpa:seq)
 
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
-    (el-get-bundle! magit)
-  nil)
+ (lambda ()
+  (el-get-bundle! magit)
+  (el-get-bundle! elpa:let-alisnt)
+  (el-get-bundle! elpa:seq)
+  (el-get-bundle! flycheck/flycheck)
+  )
+ nil)
 
 (provide 'el-get-init)
