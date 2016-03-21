@@ -62,7 +62,9 @@ article:
     - public
   tag:"))
 
-
+(defun insert-rc-datetime-jp nil
+  (interactive)
+  (shell-command "ruby $HOME/src/rc/bin/current_datetime_in_jp.rb" t))
 
 (defun dired-pwd nil
   (interactive)
