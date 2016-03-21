@@ -19,7 +19,7 @@
   (save-buffer)
   (skk-kakutei))
 
-(setq skk-cursor-hiragana-color "yellow3")
+(setq skk-cursor-hiragana-color "orange4")
 (setq skk-cursor-katakana-color "green3")
 (setq skk-cursor-latin-color "grey30")
 (setq skk-isearch-mode-enable nil)
