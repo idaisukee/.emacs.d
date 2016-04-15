@@ -47,4 +47,9 @@
 (setq inhibit-splash-screen t)
 
 (add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
-(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(if (string= emacs-version "24.5.1")
+ (lambda ()
+  (add-hook 'after-init-hook #'global-flycheck-mode))
+ nil)
+
