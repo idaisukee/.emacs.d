@@ -14,7 +14,7 @@
 (el-get-bundle zenitani/elisp)
 (el-get-bundle syohex/emacs-git-gutter)
 (el-get-bundle editorconfig)
-(el-get-bundle evil :info nil)
+;;;(el-get-bundle evil :info nil)
 (el-get-bundle! fxbois/web-mode)
 
 ;;;(el-get-bundle! magit)
