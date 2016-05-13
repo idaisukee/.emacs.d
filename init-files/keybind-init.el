@@ -14,7 +14,11 @@
                              (define-key helm-map (kbd "C-o") 'helm-next-page)
                              (define-key helm-map (kbd "C-e") 'helm-previous-page)
                              (define-key helm-map (kbd "C-r") 'delete-char)
-                             ))
+                            ))
+
+(add-hook 'dired-mode-hook '(lambda ()
+                             (define-key dired-mode-map (kbd "u") 'dired-up-directory)))
+                                                         
 (global-unset-key (kbd "C-\\"))
 (global-unset-key (kbd "C--"))
 
