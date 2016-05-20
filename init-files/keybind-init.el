@@ -130,7 +130,7 @@
 	(,(kbd "C-.") . my-kill-region)
 	(,(kbd "M-h") . shrink-window)
 	(,(kbd "M-t") . enlarge-window)
-	
+	(,(kbd "M-d") . dired-pwd)
 
 	))
 
