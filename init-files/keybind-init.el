@@ -131,7 +131,7 @@
 	(,(kbd "M-h") . shrink-window)
 	(,(kbd "M-t") . enlarge-window)
 	(,(kbd "M-d") . dired-pwd)
-
+	(,(kbd "M-b") . my-buffer-menu2)
 	))
 
 
