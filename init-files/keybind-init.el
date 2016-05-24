@@ -132,6 +132,8 @@
 	(,(kbd "M-t") . enlarge-window)
 	(,(kbd "M-d") . dired-pwd)
 	(,(kbd "M-b") . my-buffer-menu2)
+	(,(kbd "C--") . universal-argument)
+	(,(kbd "C-=") . goto-line)
 	))
 
 
