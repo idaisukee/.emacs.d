@@ -15,12 +15,13 @@
  '(button ((t (:background "white" :foreground "black" :weight light))))
  '(comint-highlight-prompt ((t (:inherit minibuffer-prompt :foreground "cyan1" :inverse-video t))))
  '(completions-common-part ((t (:inherit default :background "black" :foreground "yellow" :slant normal :weight normal :height 150 :width normal))))
- '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "yellow"))))
- '(font-lock-comment-face ((t (:foreground "dark turquoise" :slant normal))))
+ '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "#D0D102"))))
+ '(font-lock-comment-face ((t (:foreground "#01A4A4" :slant normal))))
  '(font-lock-constant-face ((t (:foreground "violet" :weight bold))))
  '(font-lock-function-name-face ((t (:foreground "orange" :height 1.1))))
- '(font-lock-string-face ((t (:foreground "skyblue"))))
+ '(font-lock-string-face ((t (:foreground "#00A1CB"))))
  '(font-lock-variable-name-face ((t (:foreground "DodgerBlue1"))))
+ '(font-lock-builtin-face ((t (:foreground "#E54028"))))
  '(mode-line ((t (:inherit default :background "#32742C" :foreground "white" :box nil :weight normal))))
  '(mode-line-buffer-id ((t (:background "white" :foreground "black" :weight normal))))
  '(mode-line-inactive ((t (:inherit default :background "#616161" :foreground "white" :weight normal))))
@@ -34,7 +35,7 @@
  '(trailing-whitespace ((t (:background "#222222"))))
  '(twittering-username-face ((t (:foreground "orange" :underline t))))
  '(whitespace-space ((t (:background "black" :foreground "darkgray"))))
- '(whitespace-tab ((t (:background "black" :foreground "darkgray")))))
+ '(whitespace-tab ((t (:background "#151515" :foreground "darkgray")))))
 
 
 
