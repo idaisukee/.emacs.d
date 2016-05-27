@@ -107,11 +107,11 @@
         :underline t))))
  '(whitespace-space
    ((t (
-        :background "#151515"
+;;;        :background "#151515"
         :foreground "darkgray"))))
  '(whitespace-tab
    ((t (
-        :background "#151515"
+;;;        :background "#151515"
         :foreground "darkgray"))))
  '(dired-marked
    ((t (
