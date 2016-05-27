@@ -26,11 +26,4 @@
 ;;;なぜか、全体をグループ化 \(\) しておかないと、うまくマッチしなかった罠
 ;;;
 
-(set-face-foreground 'whitespace-space "DimGray")
-(set-face-background 'whitespace-space 'nil)
-(set-face-bold-p 'whitespace-space t)
-
-(set-face-foreground 'whitespace-newline  "DimGray")
-(set-face-background 'whitespace-newline 'nil)
-
 (provide 'whitespace-init)
