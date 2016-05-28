@@ -69,6 +69,14 @@
   (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
   (kill-region mark (point)))
 
+(defun select-between-pair (char)
+ (interactive "c")
+ (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (forward-char 1)
+ (set-mark-command nil)
+ (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (forward-char -1))
+
 ;;; this function is under construction.
 (defun mark-between-pair (char)
   "Delete in between the given pair"
@@ -101,5 +109,6 @@
 
 (global-set-key (kbd "C-c I") 'mark-between-pair)
 (global-set-key (kbd "C-c A") 'mark-all-pair)
+(global-set-key (kbd "C-'") 'select-between-pair)
 
 (provide 'edit-text-object)
