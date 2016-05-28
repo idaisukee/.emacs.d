@@ -77,32 +77,6 @@
  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char -1))
 
-;;; this function is under construction.
-(defun mark-between-pair (char)
-  "Delete in between the given pair"
-  (interactive "cDelete between char: ")
-  (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
-  (forward-char 1)
-  (set-mark-command)
-  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
-  (forward-char -1))
-
-;;; this function is under construction.
-(defun mark-all-pair (char)
-  "Delete in between the given pair and the characters"
-  (interactive "cDelete all char: ")
-  (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
-  (set-mark-command)
-  (forward-char 1)
-  (seek-to-matching-char (get-start-char char) (get-end-char char) 1))
-
-(defun cccc ()
-  (interactive)
-  (search-backward "(")
-  (set-mark-command nil)
-  (search-forward ")")
-  (setq deactivate-mark nil))
-
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
