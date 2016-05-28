@@ -88,6 +88,12 @@
   (forward-char 1)
   (seek-to-matching-char (get-start-char char) (get-end-char char) 1))
 
+(defun cccc ()
+  (interactive)
+  (search-backward "(")
+  (set-mark-command nil)
+  (search-forward ")")
+  (setq deactivate-mark nil))
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
