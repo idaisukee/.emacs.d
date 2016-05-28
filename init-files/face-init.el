@@ -86,7 +86,8 @@
         :inherit default
         :background "#616161"
         :foreground "white"
-        :weight normal))))
+        :weight normal
+        :box nil))))
  '(org-meta-line
    ((t (
         :inherit font-lock-comment-face
