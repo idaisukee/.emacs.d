@@ -80,9 +80,6 @@
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
-
-(global-set-key (kbd "C-c I") 'mark-between-pair)
-(global-set-key (kbd "C-c A") 'mark-all-pair)
 (global-set-key (kbd "C-'") 'select-between-pair)
 
 (provide 'edit-text-object)
