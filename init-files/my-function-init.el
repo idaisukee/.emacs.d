@@ -70,5 +70,10 @@ article:
   (interactive)
   (dired default-directory))
 
+(defun my-search-forward (char)
+  (interactive "sSearch: ")
+  (search-forward char)
+  (backward-char))
+
 (provide 'my-function-init)
 
