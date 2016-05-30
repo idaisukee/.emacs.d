@@ -80,6 +80,8 @@
    ;; (,(kbd "C-<") . beginning-of-buffer)
    ;; (,(kbd "C->") . end-of-buffer)
    (,(kbd "C-x C-h") . skk-mode)
+   (,(kbd "C-S-a") . beginning-of-block)
+   (,(kbd "C-S-u") . end-of-block)
    (,(kbd "C-x j") . open-junk-file)
    (,(kbd "C-b") . delete-backward-char)
    (,(kbd "C-S-b") . backward-kill-word)
