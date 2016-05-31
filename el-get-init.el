@@ -18,6 +18,7 @@
 (el-get-bundle! fxbois/web-mode)
 
 ;;;(el-get-bundle! magit)
+(el-get-bundle! thingatpt+)
 
 (if (string= emacs-version "24.5.1")
  (lambda ()
