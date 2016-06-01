@@ -74,7 +74,7 @@
   (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
   (kill-region mark (point)))
 
-(defun select-between-pair (char)
+(defun mark-between-pair (char)
  (interactive "c")
  (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char 1)
