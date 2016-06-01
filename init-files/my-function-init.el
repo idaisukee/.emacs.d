@@ -75,32 +75,5 @@ article:
   (search-forward char)
   (backward-char))
 
-(defun blank-line? ()
-  (string-match "^\n$" (substring-no-properties (thing-at-point 'line))))
-
-;;; move-to-(next|previous)-blank-line
-;;; derived from http://mint.hateblo.jp/entry/2012/06/05/154009
-
-(defun move-to-next-blank-line ()
-  (interactive)
-  (progn (forward-line 1)
-	 (if (blank-line?) () (move-to-next-blank-line))))
-
-(defun move-to-previous-blank-line ()
-  (interactive)
-  (progn (forward-line -1)
-   (if (blank-line?) () (move-to-previous-blank-line))))
-
-(defun end-of-block ()
- (interactive)
- (progn
-  (move-to-next-blank-line)
-  (forward-char -1)))
-
-(defun beginning-of-block ()
- (interactive)
- (progn
-  (move-to-previous-blank-line)
-  (forward-char 1)))
 
 (provide 'my-function-init)
