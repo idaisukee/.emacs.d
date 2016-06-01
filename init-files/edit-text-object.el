@@ -78,9 +78,16 @@
  (interactive "c")
  (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char 1)
+ (setq start (point))
  (set-mark-command nil)
  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
- (forward-char -1))
+ (forward-char -1)
+ (setq end (point)))
+
+(defun copy-between-pair ()
+ (interactive)
+ (call-interactively 'mark-between-pair)
+ (copy-region-as-kill start end))
 
 (defun copy-whole-buffer ()
  (interactive)
