@@ -90,9 +90,9 @@
  (interactive)
  (kill-region (point-min) (point-max)))
 
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
-
-(global-set-key (kbd "C-'") 'select-between-pair)
 
 (provide 'edit-text-object)
