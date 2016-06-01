@@ -82,6 +82,10 @@
  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char -1))
 
+(defun copy-whole-buffer ()
+ (interactive)
+ (copy-region-as-kill (point-min) (point-max)))
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
