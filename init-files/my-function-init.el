@@ -103,10 +103,4 @@ article:
   (move-to-previous-blank-line)
   (forward-char 1)))
 
-(defun select-whole-buffer ()
- (interactive)
- (goto-char (point-min))
- (set-mark-command nil)
- (goto-char (point-max)))
-
 (provide 'my-function-init)
