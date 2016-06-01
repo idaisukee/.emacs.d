@@ -7,6 +7,13 @@
   (while (not (= (char-after) chr))
     (forward-char -1)))
 
+(defun point-of-left-piece ()
+ (setq old-point (point))
+ (call-interactively 'seek-backward-to-char)
+ (setq return-value (point))
+ (goto-char old-point)
+ (princ return-value))
+
 (setq char-pairs
       '(( ?\" . ?\" )
         ( ?\' . ?\' )
