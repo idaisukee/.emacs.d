@@ -135,6 +135,13 @@
   (move-to-previous-blank-line)
   (forward-char 1)))
 
+(defun mark-block ()
+ (interactive)
+ (progn
+  (beginning-of-block)
+  (set-mark-command nil)
+  (end-of-block)))
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
