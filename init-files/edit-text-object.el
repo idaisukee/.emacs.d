@@ -118,7 +118,10 @@
 (defun move-to-previous-blank-line ()
   (interactive)
   (progn (forward-line -1)
-   (if (blank-line?) () (move-to-previous-blank-line))))
+   (if (or
+        (blank-line?)
+        (= (line-number-at-pos) 1))
+        (beginning-of-line) (move-to-previous-blank-line))))
 
 (defun end-of-block ()
  (interactive)
