@@ -86,6 +86,10 @@
  (interactive)
  (copy-region-as-kill (point-min) (point-max)))
 
+(defun kill-whole-buffer ()
+ (interactive)
+ (kill-region (point-min) (point-max)))
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
