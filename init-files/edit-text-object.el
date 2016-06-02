@@ -115,9 +115,9 @@
   (progn (forward-line 1)
    (if (or
         (blank-line?)
-        (= (line-number-at-pos) (line-number-at-pos (point-max)))
+        (= (line-number-at-pos) (line-number-at-pos (point-max))))
         (end-of-line)
-        (move-to-next-blank-line)))))
+        (move-to-next-blank-line))))
 
 (defun move-to-previous-blank-line ()
   (interactive)
@@ -131,13 +131,17 @@
  (interactive)
  (progn
   (move-to-next-blank-line)
-  (forward-char -1)))
+  (forward-line -1)
+  (end-of-line)))
 
 (defun beginning-of-block ()
  (interactive)
  (progn
   (move-to-previous-blank-line)
-  (forward-char 1)))
+  (if (= (line-number-at-pos) 1)
+   ()
+   (forward-line 1))
+  (beginning-of-line)))
 
 (defun mark-block ()
  (interactive)
