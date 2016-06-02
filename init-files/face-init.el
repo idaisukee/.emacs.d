@@ -56,7 +56,7 @@
  '(font-lock-function-name-face
    ((t (
         :foreground "#F18D05"
-        :height 1.1))))
+        :height 1.0))))
  '(font-lock-string-face
    ((t (
         :foreground "#00A1CB"))))
@@ -116,7 +116,17 @@
         :foreground "darkgray"))))
  '(dired-marked
    ((t (
-        :background "#14b9d5")))))
+        :background "#14b9d5"))))
+ '(helm-selection
+   ((t (
+        :background "white"
+        :distant-foreground "black"))))
+ '(helm-source-header
+   ((t (
+        :background "#22083397778B"
+        :foreground "white"
+        :weight normal))))
+)
   
 
 
