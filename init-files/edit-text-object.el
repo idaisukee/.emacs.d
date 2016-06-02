@@ -113,7 +113,11 @@
 (defun move-to-next-blank-line ()
   (interactive)
   (progn (forward-line 1)
-	 (if (blank-line?) () (move-to-next-blank-line))))
+   (if (or
+        (blank-line?)
+        (= (line-number-at-pos) (line-number-at-pos (point-max)))
+        (end-of-line)
+        (move-to-next-blank-line)))))
 
 (defun move-to-previous-blank-line ()
   (interactive)
