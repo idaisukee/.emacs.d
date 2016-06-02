@@ -150,6 +150,15 @@
   (set-mark-command nil)
   (end-of-block)))
 
+(defun copy-block ()
+ (interactive)
+ (progn
+  (beginning-of-block)
+  (setq start (point))
+  (end-of-block)
+  (setq end (point))
+  (copy-region-as-kill start end)))
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 

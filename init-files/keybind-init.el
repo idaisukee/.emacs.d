@@ -138,6 +138,7 @@
    (,(kbd "C-w") . my-search-forward)
    (,(kbd "C-< t") . copy-whole-buffer)
    (,(kbd "C-\" b") . mark-block)
+   (,(kbd "C-< b") . copy-block)
    (,(kbd "C-'") . select-between-pair)
    (,(kbd "M--") . decr-height-10)
    (,(kbd "M-_") . incr-height-10)
