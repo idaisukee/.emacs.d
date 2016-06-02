@@ -2,9 +2,25 @@
 (load-theme 'deeper-blue t)
 (setq height 140)
 
-(set-face-attribute 'default nil
+(defun init-face ()
+ (set-face-attribute 'default nil
   :family "inconsolata"
-  :height height)
+  :height height))
+
+(init-face)
+
+(defun incr-height (int)
+ (setq height (+ height int))
+ (init-face)
+ (princ height))
+
+(defun incr-height-10 ()
+ (interactive)
+ (incr-height 10))
+
+(defun decr-height-10 ()
+ (interactive)
+ (incr-height -10))
 
 (when (eq window-system 'x)
   (set-fontset-font "fontset-default" 'japanese-jisx0208
