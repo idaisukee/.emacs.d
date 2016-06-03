@@ -16,6 +16,7 @@
 (el-get-bundle editorconfig)
 ;;;(el-get-bundle evil :info nil)
 (el-get-bundle! fxbois/web-mode)
+(el-get-bundle! lua-mode)
 
 ;;;(el-get-bundle! magit)
 
