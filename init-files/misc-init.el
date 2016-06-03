@@ -53,3 +53,7 @@
   (add-hook 'after-init-hook #'global-flycheck-mode))
  nil)
 
+(setq editorconfig-get-properties-function
+      'editorconfig-core-get-properties-hash)
+
+(editorconfig-mode t)
