@@ -75,5 +75,11 @@ article:
   (search-forward char)
   (backward-char))
 
+(define-sequential-command seq-home
+ beginning-of-line beginning-of-block seq-return)
+
+(define-sequential-command seq-end
+ end-of-line end-of-block seq-return)
+
 
 (provide 'my-function-init)
