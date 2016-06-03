@@ -122,7 +122,7 @@
    (,(kbd "C-h") . next-line)
    (,(kbd "C-t") . previous-line)
    (,(kbd "C-n") . forward-char)
-   (,(kbd "M-o") . find-file)
+   (,(kbd "M-o") . find-file-at-point)
    (,(kbd "M-O") . helm-for-files)
    (,(kbd "C-S-d") . backward-word)
    (,(kbd "C-S-n") . forward-word)
