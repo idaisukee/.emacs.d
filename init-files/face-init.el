@@ -119,7 +119,7 @@
         :background "#14b9d5"))))
  '(helm-selection
    ((t (
-        :background "white"
+        :background "darkgray"
         :distant-foreground "black"))))
  '(helm-source-header
    ((t (
