@@ -54,3 +54,6 @@
       'editorconfig-core-get-properties-hash)
 
 (editorconfig-mode t)
+
+(when (require 'multi-term nil t)
+  (setq multi-term-program "/usr/bin/zsh"))
