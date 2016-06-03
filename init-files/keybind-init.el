@@ -137,6 +137,7 @@
    (,(kbd "C--") . universal-argument)
    (,(kbd "C-=") . goto-line)
    (,(kbd "C-w") . my-search-forward)
+   (,(kbd "C-\" t") . mark-whole-buffer)
    (,(kbd "C-< t") . copy-whole-buffer)
    (,(kbd "C-\" b") . mark-block)
    (,(kbd "C-< b") . copy-block)
