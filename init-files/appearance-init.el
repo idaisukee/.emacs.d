@@ -1,6 +1,6 @@
 ;;;(load-theme 'manoj-dark t)
 (load-theme 'deeper-blue t)
-(setq height 140)
+(setq height 120)
 
 (defun init-face ()
  (set-face-attribute 'default nil
