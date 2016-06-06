@@ -39,7 +39,6 @@
         :foreground "yellow"
         :slant normal
         :weight normal
-        :height 150
         :width normal))))
  '(font-lock-comment-delimiter-face
    ((t (
