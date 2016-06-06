@@ -75,5 +75,8 @@ article:
   (search-forward char)
   (backward-char))
 
+(defun dired-xournal ()
+ (interactive)
+ (dired-do-shell-command "xournal ? &" 1))
 
 (provide 'my-function-init)
