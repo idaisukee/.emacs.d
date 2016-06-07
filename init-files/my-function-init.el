@@ -81,5 +81,16 @@ article:
 (define-sequential-command seq-end
  end-of-line end-of-block seq-return)
 
+(defun dired-xournal ()
+ (interactive)
+ (dired-do-shell-command "xournal ? &" 1))
+
+(defun dired-open-file ()
+  "In dired, open the file named on this line."
+  (interactive)
+  (let* ((file (dired-get-filename nil t)))
+    (message "Opening %s..." file)
+    (call-process "xdg-open" nil 0 nil file)
+    (message "Opening %s done" file)))
 
 (provide 'my-function-init)

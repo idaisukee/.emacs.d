@@ -18,7 +18,7 @@
         :underline nil
         :slant normal
         :weight normal
-        :height 150
+        :height 120
         :width normal
         :foundry "unknown"
         :family "Inconsolata"))))
@@ -39,7 +39,6 @@
         :foreground "yellow"
         :slant normal
         :weight normal
-        :height 150
         :width normal))))
  '(font-lock-comment-delimiter-face
    ((t (
