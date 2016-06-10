@@ -69,6 +69,7 @@
 
    (,(kbd "<tab>") . execute-extended-command)
    (,(kbd "M-'") . execute-extended-command)
+   (,(kbd "M-\"") . helm-M-x)
    (,(kbd "C-p") . yank)
    (,(kbd "C-S-p") . yank-pop)
    (,(kbd "C-d") . backward-char)
