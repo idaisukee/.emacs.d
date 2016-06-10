@@ -96,6 +96,7 @@ article:
 (defun set-region (start end)
  (goto-char start)
  (set-mark-command nil)
- (goto-char end))
+ (goto-char end)
+ (list start end))
 
 (provide 'my-function-init)
