@@ -93,4 +93,9 @@ article:
     (call-process "xdg-open" nil 0 nil file)
     (message "Opening %s done" file)))
 
+(defun set-region (start end)
+ (goto-char start)
+ (set-mark-command nil)
+ (goto-char end))
+
 (provide 'my-function-init)
