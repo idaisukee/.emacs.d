@@ -52,6 +52,7 @@
 
 
 
+
 ;; (makunbound 'overriding-minor-mode-map)
 (define-minor-mode overriding-minor-mode
  "force keybinds"             ; description
@@ -67,6 +68,7 @@
    (,(kbd "C-S-o") . end-of-buffer)
 
    (,(kbd "<tab>") . execute-extended-command)
+   (,(kbd "M-'") . execute-extended-command)
    (,(kbd "C-p") . yank)
    (,(kbd "C-S-p") . yank-pop)
    (,(kbd "C-d") . backward-char)
@@ -77,7 +79,7 @@
    (,(kbd "C-S-z") . toggle-and-print-jitai)
    (,(kbd "C-S-v") . scroll-down-command)
    (,(kbd "<backtab>") . save-buffer)
-   (,(kbd "C-<tab>") . save-buffer)
+   (,(kbd "M-s") . save-buffer)
    (,(kbd "C-a") . beginning-of-line)
    ;; (,(kbd "C-<") . beginning-of-buffer)
    ;; (,(kbd "C->") . end-of-buffer)
