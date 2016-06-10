@@ -20,6 +20,7 @@
        'skk-init
        'edit-text-object
        'web-mode-init
+       'migemo-init
        ))
 
 (mapcar 'require files-to-require)

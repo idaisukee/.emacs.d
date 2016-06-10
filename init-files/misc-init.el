@@ -57,3 +57,7 @@
 
 (when (require 'multi-term nil t)
   (setq multi-term-program "/usr/bin/zsh"))
+
+(add-hook 'css-mode-hook
+ (lambda ()
+  (setq css-indent-offset 2)))

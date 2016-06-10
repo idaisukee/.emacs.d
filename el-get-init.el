@@ -20,6 +20,7 @@
 (el-get-bundle multi-term)
 (el-get-bundle! sequential-command)
 (el-get-bundle! minor-mode-hack)
+(el-get-bundle migemo)
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
