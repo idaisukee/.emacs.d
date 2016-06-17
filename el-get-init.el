@@ -21,6 +21,7 @@
 (el-get-bundle! sequential-command)
 (el-get-bundle! minor-mode-hack)
 (el-get-bundle migemo)
+(el-get-bundle! open-junk-file)
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
