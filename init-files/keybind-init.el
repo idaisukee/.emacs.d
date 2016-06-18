@@ -150,6 +150,7 @@
    (,(kbd "M--") . decr-height-10)
    (,(kbd "M-_") . incr-height-10)
    (,(kbd "M-m") . helm-mini)
+   (,(kbd "M-c") . smart-compile)
    ))
 
 
