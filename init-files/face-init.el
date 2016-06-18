@@ -125,6 +125,9 @@
         :background "#22083397778B"
         :foreground "white"
         :weight normal))))
+ '(woman-bold
+   ((t (
+        :background "DodgerBlue1"))))
 )
   
 
