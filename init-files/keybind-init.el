@@ -23,7 +23,7 @@
 
 
 (add-hook 'dired-mode-hook '(lambda ()
-                             (define-key dired-mode-map (kbd "u") 'dired-up-directory)
+                             (define-key dired-mode-map (kbd "M-d") 'dired-up-directory)
                              (define-key dired-mode-map (kbd "f") 'find-file)
                              (define-key dired-mode-map (kbd "O") 'dired-open-file)))
 
