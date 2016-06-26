@@ -6,6 +6,7 @@
 (global-unset-key (kbd "M-c"))
 (global-unset-key (kbd "C-x C-f"))
 (global-unset-key [f10])
+(global-unset-key (kbd "M-z"))
 (add-hook 'isearch-mode-hook '(lambda ()
                                 (define-key isearch-mode-map (kbd "C-S-s") 'isearch-repeat-backward)))
 
