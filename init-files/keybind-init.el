@@ -157,6 +157,8 @@
    (,(kbd "M-_") . incr-height-10)
    (,(kbd "M-m") . helm-mini)
    (,(kbd "M-c") . smart-compile)
+   (,(kbd "M-q") . previous-buffer)
+   (,(kbd "M-j") . next-buffer)
    ))
 
 
