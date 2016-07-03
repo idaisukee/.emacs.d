@@ -19,7 +19,9 @@
   (save-buffer)
   (skk-kakutei))
 
-(setq skk-cursor-hiragana-color "#FFC43C")
+(setq kyu-cursor-hiragana-color "#FF5217")
+
+(setq skk-cursor-hiragana-color kyu-cursor-hiragana-color)
 (setq skk-cursor-katakana-color "green3")
 (setq skk-cursor-latin-color "#884488")
 (setq skk-isearch-mode-enable nil)
@@ -42,7 +44,7 @@
     (setq skk-large-jisyo (nth 0 newlub))
     (setq skk-jisyo (nth 1 newlub))
     (setq skk-backup-jisyo (nth 2 newlub))
-    (setq skk-cursor-hiragana-color "#FFC43C")
+    (setq skk-cursor-hiragana-color kyu-cursor-hiragana-color)
 ;;;    (setq skk-large-jisyo "~/ldic_kyuji.dic")
 ;;;    (setq skk-jisyo "~/udic_kyuji.dic")
 ;;;    (setq skk-backup-jisyo "~/udic_kyuji.dic.BAK")
