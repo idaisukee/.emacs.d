@@ -159,6 +159,7 @@
    (,(kbd "M-c") . smart-compile)
    (,(kbd "M-q") . previous-buffer)
    (,(kbd "M-j") . next-buffer)
+   (,(kbd "M-v") . evil-mode)
    ))
 
 
