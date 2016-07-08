@@ -99,9 +99,9 @@ article:
  (goto-char end)
  (list start end))
 
-(defun tweet-region
+(defun tweet-region ()
  (interactive)
- (shell-command-on-region "php ~/src/twm/tmhOAuthExamples/cli/tweet.php "))
+ (shell-command-on-region (region-beginning) (region-end) "php ~/src/twm/tmhOAuthExamples/cli/tweet.php "))
 
 
 (provide 'my-function-init)
