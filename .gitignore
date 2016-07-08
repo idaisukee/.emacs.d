@@ -6,3 +6,4 @@ el-get/*
 elpa/*
 recentf
 tramp
+eshell
