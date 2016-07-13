@@ -18,7 +18,7 @@
 (define-key helm-map (kbd "C-e") 'helm-previous-page)
 (define-key helm-map (kbd "C-r") 'delete-char)
 (define-key helm-map (kbd "C-b") 'delete-backward-char)
-
+(define-key helm-map (kbd "C-p") 'yank)
 
 
 
