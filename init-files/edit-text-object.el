@@ -187,7 +187,7 @@
  (mapcar 'string-to-char 
   (list
    "-" "_" "/" ":" "'" "(" "." "," " " "&"
-   "\"" "\\")))
+   "\"" "\\" "\n")))
 
 (setq beger-of-word (append larges beger-of-word))
 
@@ -202,14 +202,36 @@
 
 
 
+(defun my-mark-word ()
+ (interactive)
+ (my-backward-word)
+ (set-mark-command nil)
+ (my-forward-word))
+
 (defun my-backward-word ()
  (interactive)
  (forward-char -1)
  (if (not (beg-of-word-p))
   (my-backward-word)))
 
+(defun move-to-end-of-word ()
+ (interactive)
+ (my-forward-word)
+ (forward-char -1))
+
+(defun ieremii-kill-word ()
+ (interactive)
+ (setq mark (point))
+ (my-forward-word)
+ (kill-region mark (point)))
 
 
+
+(defun ieremii-backward-kill-word ()
+ (interactive)
+ (setq mark (point))
+ (my-backward-word)
+ (kill-region mark (point)))
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
