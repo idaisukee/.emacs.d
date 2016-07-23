@@ -211,6 +211,10 @@
  (if (not (on-close-paren-p))
   (move-to-close-paren)))
 
+
+
+(defun on-close-paren-p ()
+ (member-p (char-after (point)) close-paren))
 (setq beger-of-word 
  (mapcar 'string-to-char 
   (list
