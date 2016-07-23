@@ -267,6 +267,19 @@
 
 
 
+(defun ieremii-mark (char)
+ (interactive "c")
+ (cond
+  ((eq char ?b) (mark-block))
+  ((eq char ?t) (mark-whole-buffer))
+  ((eq char ?w) (my-mark-word))
+  (t (mark-between-pair char))))
+
+
+
+
+
+
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
