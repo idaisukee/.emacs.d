@@ -278,6 +278,11 @@
 
 
 
+(defun mark-line ()
+ (interactive)
+ (beginning-of-line)
+ (set-mark-command nil)
+ (end-of-line))
 
 
 
