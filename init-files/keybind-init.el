@@ -135,7 +135,7 @@
    (,(kbd "M-o") . find-file-at-point)
    (,(kbd "M-O") . helm-for-files)
    (,(kbd "C-S-d") . my-backward-word)
-   (,(kbd "C-S-n") . my-forward-word)
+   (,(kbd "C-S-n") . exit-white-space-or-forward-word)
    (,(kbd "M-o") . find-file)
    (,(kbd "C-S-w") . save-buffers-kill-terminal)
    (,(kbd "C-,") . my-copy-region-as-kill)

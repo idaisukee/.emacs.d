@@ -314,6 +314,13 @@
   ()))
 
 
+
+(defun exit-white-space-or-forward-word ()
+ (interactive)
+ (if (whitespace-p)
+  (exit-white-space)
+  (my-forward-word)))
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
