@@ -194,6 +194,23 @@
    "["
    "{")))
 
+
+
+(setq close-paren
+ (mapcar 'string-to-char
+  (list
+   ")"
+   "}"
+   "]")))
+
+
+
+(defun move-to-close-paren ()
+ (interactive)
+ (forward-char 1)
+ (if (not (on-close-paren-p))
+  (move-to-close-paren)))
+
 (setq beger-of-word 
  (mapcar 'string-to-char 
   (list
@@ -243,6 +260,9 @@
  (setq mark (point))
  (my-backward-word)
  (kill-region mark (point)))
+
+
+
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
