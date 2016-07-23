@@ -273,6 +273,7 @@
   ((eq char ?b) (mark-block))
   ((eq char ?t) (mark-whole-buffer))
   ((eq char ?w) (my-mark-word))
+  ((eq char ?l) (mark-line))
   (t (mark-between-pair char))))
 
 
