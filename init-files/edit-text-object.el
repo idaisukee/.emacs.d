@@ -167,9 +167,13 @@
 
 
 (defun beg-of-word-p ()
- (member-p
-  (char-after (point))
-  beger-of-word))
+ (or
+  (member-p
+   (char-after (point))
+   beger-of-word)
+  (member-p
+   (char-before (point))
+   open-paren)))
 
 (defun pr-bowp () (interactive)
  (princ (beg-of-word-p)))
@@ -183,10 +187,17 @@
 
 (setq larges (number-sequence (string-to-char "A") (string-to-char "Z")))
 
+(setq open-paren
+ (mapcar 'string-to-char
+  (list
+   "("
+   "["
+   "{")))
+
 (setq beger-of-word 
  (mapcar 'string-to-char 
   (list
-   "-" "_" "/" ":" "'" "(" ")" "[" "]" "{" "}" "." "," " " "&"
+   "-" "_" "/" ":" "'" ")" "]" "}" "." "," " " "&"
    "\"" "\\" "\n")))
 
 (setq beger-of-word (append larges beger-of-word))
