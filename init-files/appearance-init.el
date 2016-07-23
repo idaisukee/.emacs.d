@@ -1,13 +1,6 @@
 ;;;(load-theme 'manoj-dark t)
 (load-theme 'deeper-blue t)
-(setq height 100)
 
-(defun init-face ()
- (set-face-attribute 'default nil
-  :family "inconsolata"
-  :height height))
-
-(init-face)
 
 (defun incr-height (int)
  (setq height (+ height int))
@@ -38,5 +31,13 @@
 ;;; 半角カナをヒラギノ角ゴProNにする
   (set-fontset-font "fontset-default" 'katakana-jisx0201
     '("Hiragino Maru Gothic ProN")))
+
+(setq height 100)
+(defun init-face ()
+ (set-face-attribute 'default nil
+  :family "inconsolata"
+  :height height))
+
+(init-face)
 
 (provide 'appearance-init)

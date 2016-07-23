@@ -13,7 +13,6 @@
        'misc-init
        'my-function-init
        'alias-init
-       'appearance-init
        'face-init
        'whitespace-init
        'shell-mode-init
@@ -21,6 +20,7 @@
        'edit-text-object
        'web-mode-init
        'migemo-init
+       'appearance-init
        ))
 
 (mapcar 'require files-to-require)
