@@ -298,6 +298,22 @@
  (goto-char origin))
 
 
+
+(defun whitespace-p ()
+ (interactive)
+ (member-p (char-after) (list (string-to-char " ") (string-to-char "\t"))))
+
+
+
+(defun exit-white-space ()
+ (interactive)
+ (if (whitespace-p)
+  (progn
+   (setq end-of-whitespace (cdr (bounds-of-thing-at-point 'whitespace)))
+   (goto-char (+ 0 end-of-whitespace)))
+  ()))
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
