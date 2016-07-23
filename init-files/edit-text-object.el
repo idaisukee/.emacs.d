@@ -210,19 +210,6 @@
 
 
 
-(defun move-to-next-beg-of-word ()
- (forward-char 1)
- (my-forward-word))
-
-
-
-
-
-(defun move-to-prev-beg-of-word ()
- (forward-char -1)
- (my-backward-word))
-
-
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
