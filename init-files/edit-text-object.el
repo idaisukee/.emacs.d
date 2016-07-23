@@ -310,7 +310,6 @@
  (if (whitespace-p)
   (progn
    (setq end-of-whitespace (cdr (bounds-of-thing-at-point 'whitespace)))
-   (goto-char (+ 0 end-of-whitespace)))
   ()))
 
 
