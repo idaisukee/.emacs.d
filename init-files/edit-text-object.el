@@ -131,8 +131,10 @@
  (interactive)
  (progn
   (move-to-next-blank-line)
-  (forward-line -1)
   (end-of-line)))
+
+
+
 
 (defun beginning-of-block ()
  (interactive)
