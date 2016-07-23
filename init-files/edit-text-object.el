@@ -286,6 +286,17 @@
 
 
 
+(defun copy-line (line-num)
+ (interactive "nCopy line: ")
+ (setq origin (point))
+ (goto-line line-num)
+ (beginning-of-line)
+ (setq mark (point))
+ (end-of-line)
+ (copy-region-as-kill mark (point))
+ (goto-char origin))
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
