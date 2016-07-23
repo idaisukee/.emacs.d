@@ -161,6 +161,69 @@
   (setq end (point))
   (copy-region-as-kill start end)))
 
+(defun member-p (a b)
+ (not (not (member a b))))
+
+
+
+(defun beg-of-word-p ()
+ (member-p
+  (char-after (point))
+  beger-of-word))
+
+(defun pr-bowp () (interactive)
+ (princ (beg-of-word-p)))
+
+(global-set-key (kbd "<f12>") 'pr-bowp)
+(global-set-key (kbd "C-<f12>") 'my-forward-word)
+(global-set-key (kbd "M-<f11>") 'my-backward-word)
+
+
+
+
+(setq larges (number-sequence (string-to-char "A") (string-to-char "Z")))
+
+(setq beger-of-word 
+ (mapcar 'string-to-char 
+  (list
+   "-" "_" "/" ":" "'" "(" "." "," " " "&"
+   "\"" "\\")))
+
+(setq beger-of-word (append larges beger-of-word))
+
+
+
+(defun my-forward-word ()
+ (interactive)
+ (forward-char 1)
+ (if (not (beg-of-word-p))
+  (my-forward-word)))
+  
+
+
+
+(defun my-backward-word ()
+ (interactive)
+ (forward-char -1)
+ (if (not (beg-of-word-p))
+  (my-backward-word)))
+
+
+
+(defun move-to-next-beg-of-word ()
+ (forward-char 1)
+ (my-forward-word))
+
+
+
+
+
+(defun move-to-prev-beg-of-word ()
+ (forward-char -1)
+ (my-backward-word))
+
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
