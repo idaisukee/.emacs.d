@@ -326,7 +326,7 @@
  (if (blank-line?)
   (kill-line)
   (progn
-   (setq start (car (bounds-of-thing-at-point 'line)))
+   (setq start (point))
    (setq end (cdr (bounds-of-thing-at-point 'line)))
    (kill-region start end))))
 
