@@ -61,3 +61,6 @@
 (add-hook 'css-mode-hook
  (lambda ()
   (setq css-indent-offset 2)))
+
+(custom-set-variables
+ '(open-junk-file-format "~/src/junk/%Y-%m-%d-%H%M%S." t))
