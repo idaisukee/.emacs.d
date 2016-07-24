@@ -332,6 +332,25 @@
 
 
 
+
+(defun prev-do ()
+ (interactive)
+ (search-backward "do"))
+
+
+
+(defun next-end ()
+ (interactive)
+ (search-forward "end"))
+
+
+
+(defun ruby-mark-block ()
+ (interactive)
+ (prev-do)
+ (set-mark-command nil)
+ (next-end))
+ 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
