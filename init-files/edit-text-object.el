@@ -320,6 +320,19 @@
   (exit-white-space)
   (my-forward-word)))
 
+
+
+(defun ieremii-kill-line ()
+ (interactive)
+ (if (blank-line?)
+  (kill-line)
+  (progn
+   (setq start (car (bounds-of-thing-at-point 'line)))
+   (setq end (cdr (bounds-of-thing-at-point 'line)))
+   (kill-region start end))))
+
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
