@@ -24,5 +24,3 @@
        ))
 
 (mapcar 'require files-to-require)
-
-(put 'upcase-region 'disabled nil)

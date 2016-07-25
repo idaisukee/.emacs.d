@@ -64,3 +64,6 @@
 
 (custom-set-variables
  '(open-junk-file-format "~/src/junk/%Y-%m-%d-%H%M%S." t))
+
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
