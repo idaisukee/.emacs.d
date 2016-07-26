@@ -67,3 +67,6 @@
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+(setq split-height-threshold nil)
+(setq split-width-threshold 100)
