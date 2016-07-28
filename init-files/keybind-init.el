@@ -160,6 +160,8 @@
    (,(kbd "M-j") . next-buffer)
    (,(kbd "M-v") . evil-mode)
    (,(kbd "C-k") . ieremii-kill-line)
+   (,(kbd "M-q") . previous-buffer)
+   (,(kbd "M-j") . next-buffer)
    ))
 
 
