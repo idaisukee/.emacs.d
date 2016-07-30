@@ -1,79 +1,79 @@
 (defun move-line-to-opposite-window nil
-  (interactive)
-  (kill-line)
-  (yank)
-  (next-line)
-  (beginning-of-line)
-  (other-window 1)
-  (yank)
-  (newline)
-  (beginning-of-line)
-  (other-window 1))
+ (interactive)
+ (kill-line)
+ (yank)
+ (next-line)
+ (beginning-of-line)
+ (other-window 1)
+ (yank)
+ (newline)
+ (beginning-of-line)
+ (other-window 1))
 
 (defun my-buffer-menu nil
-  (interactive)
-  (buffer-menu-other-window)
-  (other-window 0))
+ (interactive)
+ (buffer-menu-other-window)
+ (other-window 0))
 
 (defun my-buffer-menu2 nil
-  (interactive)
-  (ibuffer-other-window)
-  (other-window 0))
+ (interactive)
+ (ibuffer-other-window)
+ (other-window 0))
 
 (defun open-init-el nil
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
+ (interactive)
+ (find-file "~/.emacs.d/init.el"))
 
 (defun my-kill-region nil
-  (interactive)
-  (kill-region (point) (mark)))
+ (interactive)
+ (kill-region (point) (mark)))
 
 (defun my-copy-region-as-kill nil
-  (interactive)
-  (copy-region-as-kill (point) (mark)))
+ (interactive)
+ (copy-region-as-kill (point) (mark)))
 
 (defun insert-date-time nil
-  (interactive)
-  (insert (format-time-string "%m %d %H%M" (current-time))))
+ (interactive)
+ (insert (format-time-string "%m %d %H%M" (current-time))))
 
 (defun insert-year-date-time nil
-  (interactive)
-  (insert (format-time-string "%Y %m%d %H%M" (current-time))))
+ (interactive)
+ (insert (format-time-string "%Y %m%d %H%M" (current-time))))
 
 (defun prepare-article nil
-  (interactive)
-  (insert "---
+ (interactive)
+ (insert "---
 article:
   time: ")
-  (insert-year-date-time)
-  (insert "
+ (insert-year-date-time)
+ (insert "
   main: | 
   range:
     - public
   tag:"))
 
 (defun prepare-article-2 nil
-  (interactive)
-  (insert "- time: ")
-  (insert-year-date-time)
-  (insert "
+ (interactive)
+ (insert "- time: ")
+ (insert-year-date-time)
+ (insert "
   main: | 
   range:
     - public
   tag:"))
 
 (defun insert-rc-datetime-jp nil
-  (interactive)
-  (shell-command "ruby $PRD/src/rc/bin/current_datetime_in_jp.rb" t))
+ (interactive)
+ (shell-command "ruby $PRD/src/rc/bin/current_datetime_in_jp.rb" t))
 
 (defun dired-pwd nil
-  (interactive)
-  (dired default-directory))
+ (interactive)
+ (dired default-directory))
 
 (defun my-search-forward (char)
-  (interactive "sSearch: ")
-  (search-forward char)
-  (backward-char))
+ (interactive "sSearch: ")
+ (search-forward char)
+ (backward-char))
 
 ;; (define-sequential-command seq-home
 ;;  beginning-of-line beginning-of-block seq-return)
@@ -86,12 +86,12 @@ article:
  (dired-do-shell-command "xournal ? &" 1))
 
 (defun dired-open-file ()
-  "In dired, open the file named on this line."
-  (interactive)
-  (let* ((file (dired-get-filename nil t)))
-    (message "Opening %s..." file)
-    (call-process "xdg-open" nil 0 nil file)
-    (message "Opening %s done" file)))
+ "In dired, open the file named on this line."
+ (interactive)
+ (let* ((file (dired-get-filename nil t)))
+  (message "Opening %s..." file)
+  (call-process "xdg-open" nil 0 nil file)
+  (message "Opening %s done" file)))
 
 (defun set-region (start end)
  (goto-char start)
