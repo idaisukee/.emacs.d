@@ -7,8 +7,9 @@
 (global-unset-key (kbd "C-x C-f"))
 (global-unset-key [f10])
 (global-unset-key (kbd "M-z"))
-(add-hook 'isearch-mode-hook '(lambda ()
-                                (define-key isearch-mode-map (kbd "C-S-s") 'isearch-repeat-backward)))
+(add-hook 'isearch-mode-hook 
+ '(lambda ()
+   (define-key isearch-mode-map (kbd "C-S-s") 'isearch-repeat-backward)))
 
 (define-key helm-map (kbd "C-d") 'backward-char)
 (define-key helm-map (kbd "C-h") 'helm-next-line)
@@ -22,10 +23,11 @@
 
 
 
-(add-hook 'dired-mode-hook '(lambda ()
-                             (define-key dired-mode-map (kbd "e") 'dired-up-directory)
-                             (define-key dired-mode-map (kbd "f") 'find-file)
-                             (define-key dired-mode-map (kbd "O") 'dired-open-file)))
+(add-hook 'dired-mode-hook 
+ '(lambda ()
+   (define-key dired-mode-map (kbd "e") 'dired-up-directory)
+   (define-key dired-mode-map (kbd "f") 'find-file)
+   (define-key dired-mode-map (kbd "O") 'dired-open-file)))
 
 (global-unset-key (kbd "C-\\"))
 (global-unset-key (kbd "C--"))
