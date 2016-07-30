@@ -219,6 +219,7 @@
  (mapcar 'string-to-char 
   (list
    "-" "_" "/" ":" "'" ")" "]" "}" ">" "." "," " " "&" "@"
+   "，" "．" "、" "。" "・" "？" "！" "『" "』"
    "\"" "\\" "\n")))
 
 (setq beger-of-word (append larges beger-of-word))
