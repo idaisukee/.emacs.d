@@ -1,6 +1,6 @@
 ;;; derived from http://superuser.com/questions/124246/emacs-equivalent-to-vim-ci
 
-                                        ; Re-create ci" ca"...
+;;; Re-create ci" ca"...
 (defun seek-backward-to-char (chr)
  "Seek backwards to a character"
  (interactive "cSeek back to char: ")
