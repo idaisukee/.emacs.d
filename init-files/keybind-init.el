@@ -55,8 +55,8 @@
 
 
 
-(define-key minibuffer-local-map (kbd "C-S-t") 'previous-history-element)
-(define-key minibuffer-local-map (kbd "C-S-h") 'next-history-element)
+(define-key minibuffer-local-map (kbd "M-t") 'previous-history-element)
+(define-key minibuffer-local-map (kbd "M-h") 'next-history-element)
 
 
 
@@ -142,8 +142,6 @@
    (,(kbd "C-S-w") . save-buffers-kill-terminal)
    (,(kbd "C-,") . my-copy-region-as-kill)
    (,(kbd "C-.") . my-kill-region)
-   (,(kbd "M-h") . shrink-window)
-   (,(kbd "M-t") . enlarge-window)
    (,(kbd "M-d") . dired-pwd)
    (,(kbd "M-b") . my-buffer-menu2)
    (,(kbd "C--") . universal-argument)
