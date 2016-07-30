@@ -128,6 +128,15 @@
  '(woman-bold
    ((t (
         :background "DodgerBlue1"))))
+
+ '(info-menu-header
+   ((t (
+        :family "Inconsolata"))))
+
+ '(variable-pitch
+   ((t (
+        :family "Inconsolata"
+        :weight normal))))
 )
   
 

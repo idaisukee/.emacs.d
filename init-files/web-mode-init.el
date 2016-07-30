@@ -1,11 +1,13 @@
 (add-to-list 'auto-mode-alist '("\\.ctp\\'"   . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
-(add-hook 'web-mode-hook '(lambda ()
-                           (setq web-mode-engines-alist
-                            '(("php"    . "\\.ctp\\'"))
-                            )
-                           ))
+(add-hook
+ 'web-mode-hook
+ '(lambda ()
+   (setq web-mode-engines-alist
+    '(("php"    . "\\.ctp\\'"))
+    )
+   ))
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
