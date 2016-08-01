@@ -15,7 +15,7 @@
 (defalias 'md 'make-directory)
 (defalias 'cp 'dired-do-copy)
 (defalias 'mv 'dired-do-rename)
-(defalias 'cr 'comment-region)
+(defalias 'cr 'comment-or-uncomment-region)
 (defalias 'ucr 'uncomment-region)
 (defalias 's 'smart-compile)
 (defalias 'rs 'replace-string)
