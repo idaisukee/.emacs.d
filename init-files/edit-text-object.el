@@ -426,6 +426,19 @@
 
 
 
+(defun region-to-string (begin end)
+ (setq str "")
+ (goto-char begin)
+ (while (not (= end (point)))
+  (setq char (char-after (point)))
+  (setq str (concat str (char-to-string char)))
+  (forward-char 1))
+ str)
+
+
+
+(region-to-string 1 10)
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
