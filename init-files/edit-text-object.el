@@ -29,6 +29,38 @@
    ( ?\u0020  . ?\u0020  ) ;;; hankaku space
    ))
 
+
+
+(defun ieremii-move-left-to-char (char)
+ (if (= (char-after (point)) char)
+  ()
+  (progn
+   (forward-char -1)
+   (ieremii-move-left-to-char char))))
+
+
+
+(defun ieremii-move-right-to-char (char)
+ (if (= (char-after (point)) char)
+  ()
+  (progn
+   (forward-char 1)
+   (ieremii-move-right-to-char char))))
+
+
+
+(defun mark-all-pair (a-char)
+ (interactive "cmark all pair: ")
+ (setq pair (get-char-pair a-char))
+ (setq left (car pair))
+ (setq right (cdr pair))
+ (ieremii-move-left-to-char left)
+ (set-mark-command nil)
+ (ieremii-move-right-to-char right)
+ (forward-char 1))
+
+
+
 (defun get-char-pair (chr)
  (let ((result ()))
   (dolist (x char-pairs)
@@ -90,6 +122,19 @@
  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char -1)
  (setq end (point)))
+
+
+
+(defun mark-all-pair (char)
+ (interactive "c")
+ (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (setq start (point))
+ (set-mark-command nil)
+ (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (forward-char -1)
+ (setq end (point)))
+
+
 
 (defun copy-between-pair ()
  (interactive)
