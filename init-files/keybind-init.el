@@ -95,7 +95,7 @@
    ;; (,(kbd "C->") . end-of-buffer)
    (,(kbd "C-x C-h") . skk-mode)
    (,(kbd "C-S-a") . beginning-of-block)
-   (,(kbd "C-S-u") . end-of-block)
+   (,(kbd "C-S-u") . move-to-close-paren)
    (,(kbd "C-x j") . open-junk-file)
    (,(kbd "C-b") . delete-backward-char)
    (,(kbd "C-S-b") . ieremii-backward-kill-word)
