@@ -410,6 +410,22 @@
 
 
 
+(defun count-char (char begin end)
+ (setq begin (max begin (point-min)))
+ (setq end (min end (point-max)))
+ (setq init (point))
+ (goto-char begin)
+ (setq count 0)
+ (while (not (= end (point)))
+  (if (= (char-after (point)) char)
+   (setq count (+ count 1))
+   nil)
+  (forward-char 1))
+ (goto-char init)
+ count)
+
+
+
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
