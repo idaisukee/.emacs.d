@@ -437,8 +437,6 @@
 
 
 
-(region-to-string 1 10)
-
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
 
