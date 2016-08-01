@@ -179,7 +179,7 @@
  (princ (beg-of-word-p)))
 
 (global-set-key (kbd "<f12>") 'pr-bowp)
-(global-set-key (kbd "C-<f12>") 'my-forward-word)
+(global-set-key (kbd "C-<f12>") 'move-to-close-paren)
 (global-set-key (kbd "M-<f11>") 'my-backward-word)
 
 
@@ -351,6 +351,8 @@
  (prev-do)
  (set-mark-command nil)
  (next-end))
+
+
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
