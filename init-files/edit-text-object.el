@@ -180,8 +180,7 @@
 
 (global-set-key (kbd "<f12>") 'pr-bowp)
 (global-set-key (kbd "C-<f12>") 'move-to-close-paren)
-(global-set-key (kbd "M-<f11>") 'my-backward-word)
-
+(global-set-key (kbd "M-<f11>") 'move-to-open-paren)
 
 
 
@@ -204,6 +203,13 @@
    "]")))
 
 
+(defun move-to-open-paren ()
+ (interactive)
+ (forward-char -1)
+ (if (not (on-open-paren-p))
+  (move-to-open-paren)))
+
+
 
 (defun move-to-close-paren ()
  (interactive)
@@ -213,8 +219,13 @@
 
 
 
+(defun on-open-paren-p ()
+ (member-p (char-after (point)) open-paren))
+
+
 (defun on-close-paren-p ()
  (member-p (char-after (point)) close-paren))
+
 (setq beger-of-word 
  (mapcar 'string-to-char 
   (list
