@@ -431,7 +431,20 @@
  (setq left-pieces (count-char open begin end))
  (setq right-pieces (count-char close begin end))
  (= left-pieces right-pieces))
-  
+
+
+
+(defun nearest (char orientation init)
+ (if (< orientation 0)
+  (setq orientation -1)
+  (setq orientation 1))
+ (setq scanner init)
+ (while (not (= scanning-char char))
+  (setq scanning-char (char-after scanner))
+  (setq scanner (+ scanner orientation)))
+ scanner)
+
+
 
 (defun region-to-string (begin end)
  (setq str "")
