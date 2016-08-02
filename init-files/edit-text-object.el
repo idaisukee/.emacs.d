@@ -413,13 +413,13 @@
 (defun count-char (char begin end)
  (setq begin (max begin (point-min)))
  (setq end (min end (point-max)))
- (setq left begin)
+ (setq scanner begin)
  (setq count 0)
- (while (not (= end left))
-  (if (= (char-after left) char)
+ (while (not (= scanner end))
+  (if (= (char-after scanner) char)
    (setq count (+ count 1))
    nil)
-  (setq left (1+ left)))
+  (setq scanner (1+ scanner)))
   count)
 
 
