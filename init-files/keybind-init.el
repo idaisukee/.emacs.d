@@ -161,6 +161,7 @@
    (,(kbd "C-k") . ieremii-kill-line)
    (,(kbd "M-q") . previous-buffer)
    (,(kbd "M-j") . next-buffer)
+   (,(kbd "M-e") . eval-last-sexp)
    ))
 
 
