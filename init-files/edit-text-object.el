@@ -426,9 +426,9 @@
 
 (defun <=> (a b)
  (cond
-  ((> a b) -1)
+  ((< a b) -1)
   ((= a b) 0)
-  ((< a b) 1)))
+  ((> a b) 1)))
 
 
 
@@ -438,7 +438,7 @@
  (setq close (cdr pair))
  (setq left-pieces (count-char open begin end))
  (setq right-pieces (count-char close begin end))
- (= left-pieces right-pieces))
+ (<=> left-pieces right-pieces))
 
 
 
