@@ -29,6 +29,38 @@
    ( ?\u0020  . ?\u0020  ) ;;; hankaku space
    ))
 
+
+
+(defun ieremii-move-left-to-char (char)
+ (if (= (char-after (point)) char)
+  ()
+  (progn
+   (forward-char -1)
+   (ieremii-move-left-to-char char))))
+
+
+
+(defun ieremii-move-right-to-char (char)
+ (if (= (char-after (point)) char)
+  ()
+  (progn
+   (forward-char 1)
+   (ieremii-move-right-to-char char))))
+
+
+
+(defun mark-all-pair (a-char)
+ (interactive "cmark all pair: ")
+ (setq pair (get-char-pair a-char))
+ (setq left (car pair))
+ (setq right (cdr pair))
+ (ieremii-move-left-to-char left)
+ (set-mark-command nil)
+ (ieremii-move-right-to-char right)
+ (forward-char 1))
+
+
+
 (defun get-char-pair (chr)
  (let ((result ()))
   (dolist (x char-pairs)
@@ -90,6 +122,19 @@
  (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
  (forward-char -1)
  (setq end (point)))
+
+
+
+(defun mark-all-pair (char)
+ (interactive "c")
+ (seek-backward-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (setq start (point))
+ (set-mark-command nil)
+ (seek-to-matching-char (get-start-char char) (get-end-char char) 1)
+ (forward-char -1)
+ (setq end (point)))
+
+
 
 (defun copy-between-pair ()
  (interactive)
@@ -179,9 +224,8 @@
  (princ (beg-of-word-p)))
 
 (global-set-key (kbd "<f12>") 'pr-bowp)
-(global-set-key (kbd "C-<f12>") 'my-forward-word)
-(global-set-key (kbd "M-<f11>") 'my-backward-word)
-
+(global-set-key (kbd "C-<f12>") 'move-to-close-paren)
+(global-set-key (kbd "M-<f11>") 'move-to-open-paren)
 
 
 
@@ -204,6 +248,13 @@
    "]")))
 
 
+(defun move-to-open-paren ()
+ (interactive)
+ (forward-char -1)
+ (if (not (on-open-paren-p))
+  (move-to-open-paren)))
+
+
 
 (defun move-to-close-paren ()
  (interactive)
@@ -213,8 +264,13 @@
 
 
 
+(defun on-open-paren-p ()
+ (member-p (char-after (point)) open-paren))
+
+
 (defun on-close-paren-p ()
  (member-p (char-after (point)) close-paren))
+
 (setq beger-of-word 
  (mapcar 'string-to-char 
   (list
@@ -351,6 +407,35 @@
  (prev-do)
  (set-mark-command nil)
  (next-end))
+
+
+
+(defun count-char (char begin end)
+ (setq begin (max begin (point-min)))
+ (setq end (min end (point-max)))
+ (setq init (point))
+ (goto-char begin)
+ (setq count 0)
+ (while (not (= end (point)))
+  (if (= (char-after (point)) char)
+   (setq count (+ count 1))
+   nil)
+  (forward-char 1))
+ (goto-char init)
+ count)
+
+
+
+(defun region-to-string (begin end)
+ (setq str "")
+ (goto-char begin)
+ (while (not (= end (point)))
+  (setq char (char-after (point)))
+  (setq str (concat str (char-to-string char)))
+  (forward-char 1))
+ str)
+
+
 
 (global-set-key (kbd "C-c i") 'delete-between-pair)
 (global-set-key (kbd "C-c a") 'delete-all-pair)
