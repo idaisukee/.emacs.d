@@ -430,10 +430,8 @@
  (setq close (cdr pair))
  (setq left-pieces (count-char open begin end))
  (setq right-pieces (count-char close begin end))
- (if (= left-pieces right-pieces)
-  t
-  nil))
-
+ (= left-pieces right-pieces))
+  
 
 (defun region-to-string (begin end)
  (setq str "")
