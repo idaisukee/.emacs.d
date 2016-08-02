@@ -445,21 +445,48 @@
 (defun widen (char begin end orientation)
  (setq left-scanner begin)
  (setq right-scanner end)
- (if (< orientation 0)
-  (left-widen)
-  (right-widen)))
+ (cond
+  ((< orientation 0)
+   (left-widen char begin end))
+  ((= orientation 0)
+   ())
+  ((> orientation 0)
+   (right-widen char begin end))))
+
+
+(defun left-widen (char begin end)
+ (setq begin (nearest char -1 (1- begin)))
+ (list begin end))
+
+;;;(left-widen ?c 100 100000)
+
+(defun right-widen (char begin end)
+ (nearest char 1 (1+ end)))
 
 
 
 (defun nearest (char orientation init)
- (if (< orientation 0)
-  (setq orientation -1)
-  (setq orientation 1))
+ (if (< init (point-min))
+  (setq init (point-min))
+  nil)
+ (if (> init (point-max))
+  (setq init (point-max))
+  nil)
+ (setq orientation
+  (<=> orientation 0))
  (setq scanner init)
+ (setq scanning-char (char-after scanner))
  (while (not (= scanning-char char))
   (setq scanning-char (char-after scanner))
   (setq scanner (+ scanner orientation)))
- scanner)
+ (if
+  (and
+   (= scanner (point-min))
+   (not (= scanning-char char)))
+  "error"
+  scanner))
+
+;;;(nearest ?c 1 100000)
 
 
 
