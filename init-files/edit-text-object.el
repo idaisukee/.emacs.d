@@ -424,6 +424,17 @@
 
 
 
+(defun balance? (char begin end)
+ (setq pair (get-char-pair char))
+ (setq open (car pair))
+ (setq close (cdr pair))
+ (setq left-pieces (count-char open begin end))
+ (setq right-pieces (count-char close begin end))
+ (if (= left-pieces right-pieces)
+  t
+  nil))
+
+
 (defun region-to-string (begin end)
  (setq str "")
  (goto-char begin)
