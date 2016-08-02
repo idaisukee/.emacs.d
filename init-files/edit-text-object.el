@@ -442,6 +442,15 @@
 
 
 
+(defun widen (char begin end orientation)
+ (setq left-scanner begin)
+ (setq right-scanner end)
+ (if (< orientation 0)
+  (left-widen)
+  (right-widen)))
+
+
+
 (defun nearest (char orientation init)
  (if (< orientation 0)
   (setq orientation -1)
