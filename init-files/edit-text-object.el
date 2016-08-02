@@ -424,6 +424,14 @@
 
 
 
+(defun <=> (a b)
+ (cond
+  ((> a b) -1)
+  ((= a b) 0)
+  ((< a b) 1)))
+
+
+
 (defun balance? (char begin end)
  (setq pair (get-char-pair char))
  (setq open (car pair))
@@ -443,6 +451,17 @@
   (setq scanning-char (char-after scanner))
   (setq scanner (+ scanner orientation)))
  scanner)
+
+
+
+(defun balanced-pos (char init)
+ (setq pair (get-char-pair char))
+ (setq open (car pair))
+ (setq close (cdr pair))
+ (setq begin (nearest open -1 init))
+ (setq end (nearest end 1 init))
+ (balance? begin end)
+ (list begin end))
 
 
 
