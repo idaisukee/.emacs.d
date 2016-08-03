@@ -103,7 +103,6 @@
    (,(kbd "C-S-s") . isearch-backward)
    (,(kbd "C-S-t") . backward-paragraph)
    (,(kbd "C-S-h") . forward-paragraph)
-   (,(kbd "<f1>") . delete-other-windows)
 ;;;(,[f2] . my-buffer-menu)
    (,(kbd "<f2>") . my-buffer-menu2)
    (,(kbd "<f3>") . other-window)
@@ -117,7 +116,6 @@
    (,(kbd "C-<f8>") . show-lub)
 ;;;(,[f9] . save-buffer)
    (,(kbd "<f9>") . prepare-article-2)
-   (,(kbd "<f10>") . delete-window)
    (,(kbd "<f11>") . dired-pwd)
    (,(kbd "C-<f11>") . dired)
    (,(kbd "S-<muhenkan>") . delete-window)
@@ -162,6 +160,9 @@
    (,(kbd "M-q") . previous-buffer)
    (,(kbd "M-j") . next-buffer)
    (,(kbd "M-e") . eval-last-sexp)
+   (,(kbd "M-;") . delete-window)
+   (,(kbd "M-k") . delete-other-windows)
+
    ))
 
 
