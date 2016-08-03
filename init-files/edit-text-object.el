@@ -413,16 +413,91 @@
 (defun count-char (char begin end)
  (setq begin (max begin (point-min)))
  (setq end (min end (point-max)))
- (setq init (point))
- (goto-char begin)
+ (setq scanner begin)
  (setq count 0)
- (while (not (= end (point)))
-  (if (= (char-after (point)) char)
+ (while (not (= scanner end))
+  (if (= (char-after scanner) char)
    (setq count (+ count 1))
    nil)
-  (forward-char 1))
- (goto-char init)
- count)
+  (setq scanner (1+ scanner)))
+  count)
+
+
+
+(defun <=> (a b)
+ (cond
+  ((< a b) -1)
+  ((= a b) 0)
+  ((> a b) 1)))
+
+
+
+(defun balance? (char begin end)
+ (setq pair (get-char-pair char))
+ (setq open (car pair))
+ (setq close (cdr pair))
+ (setq left-pieces (count-char open begin end))
+ (setq right-pieces (count-char close begin end))
+ (<=> left-pieces right-pieces))
+
+
+
+(defun widen (char begin end orientation)
+ (setq left-scanner begin)
+ (setq right-scanner end)
+ (cond
+  ((< orientation 0)
+   (left-widen char begin end))
+  ((= orientation 0)
+   ())
+  ((> orientation 0)
+   (right-widen char begin end))))
+
+
+(defun left-widen (char begin end)
+ (setq begin (nearest char -1 (1- begin)))
+ (list begin end))
+
+;;;(left-widen ?c 100 100000)
+
+(defun right-widen (char begin end)
+ (nearest char 1 (1+ end)))
+
+
+
+(defun nearest (char orientation init)
+ (if (< init (point-min))
+  (setq init (point-min))
+  nil)
+ (if (> init (point-max))
+  (setq init (point-max))
+  nil)
+ (setq orientation
+  (<=> orientation 0))
+ (setq scanner init)
+ (setq scanning-char (char-after scanner))
+ (while (not (= scanning-char char))
+  (setq scanning-char (char-after scanner))
+  (setq scanner (+ scanner orientation)))
+ (if
+  (and
+   (= scanner (point-min))
+   (not (= scanning-char char)))
+  "error"
+  scanner))
+
+;;;(nearest ?c 1 100000)
+
+
+
+(defun balanced-pos (char init)
+ (setq pair (get-char-pair char))
+ (setq open (car pair))
+ (setq close (cdr pair))
+ (setq begin (nearest open -1 init))
+ (setq end (nearest end 1 init))
+ (balance? begin end)
+ (list begin end))
 
 
 
