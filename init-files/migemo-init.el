@@ -5,6 +5,9 @@
 ;; Set your installed path
 (setq migemo-dictionary "/usr/share/cmigemo/utf-8/migemo-dict")
 
+(when (eq window-system 'ns)
+ (setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict"))
+
 
 (setq migemo-user-dictionary nil)
 (setq migemo-regex-dictionary nil)

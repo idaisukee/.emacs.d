@@ -1,4 +1,4 @@
-(set-face-background 'hl-line "cyan4")
+;;;(set-face-background 'hl-line "cyan4")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

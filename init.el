@@ -10,17 +10,18 @@
 (setq files-to-require
  (list
   'keybind-init
-  'misc-init
   'my-function-init
   'alias-init
-  'face-init
   'whitespace-init
   'shell-mode-init
   'skk-init
   'edit-text-object
   'web-mode-init
-  'migemo-init
-  'appearance-init
+;;;  'migemo-init
+   'face-init 
+   'appearance-init
+  'misc-init
+
   ))
 
 (mapcar 'require files-to-require)
