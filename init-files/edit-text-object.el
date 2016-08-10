@@ -389,6 +389,14 @@
 
 
 
+(defun ieremii-kill-line-contents ()
+ (interactive)
+ (progn
+  (setq start (point))
+  (setq end (1- (cdr (bounds-of-thing-at-point 'line))))
+  (kill-region start end)))
+
+
 
 (defun prev-do ()
  (interactive)
