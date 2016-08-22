@@ -20,6 +20,8 @@
 (defalias 's 'smart-compile)
 (defalias 'rs 'replace-string)
 (defalias 'gl 'goto-line)
+(defalias 'qr 'query-replace)
+(defalias 'rr 'replace-regexp)
 
 
 (provide 'alias-init)
