@@ -390,7 +390,7 @@
  (interactive)
  (while (not (real-beginning-of-line-p))
   (progn
-   (forward-char -1)))
+   (forward-char -1))))
 
 (defun exit-white-space-or-forward-word ()
  (interactive)
