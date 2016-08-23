@@ -107,7 +107,6 @@
    (,(kbd "<f2>") . my-buffer-menu2)
    (,(kbd "<f3>") . other-window)
    (,(kbd "<f4>") . open-init-el)
-   (,(kbd "<f5>") . lispxmp)
    (,(kbd "<f6>") . shell)
    (,(kbd "C-<f6>") . eshell)
    (,(kbd "<f7>") . toggle-and-print-skk-kutouten-type)
