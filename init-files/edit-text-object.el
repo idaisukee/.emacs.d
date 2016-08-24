@@ -300,8 +300,10 @@
 (defun my-backward-word ()
  (interactive)
  (forward-char -1)
- (if (not (beg-of-word-p))
-  (my-backward-word)))
+ (if (bolp)
+  (skip-chars-forward " \t")
+  (if (not (beg-of-word-p))
+   (my-backward-word))))
 
 (defun move-to-end-of-word ()
  (interactive)
