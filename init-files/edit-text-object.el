@@ -300,8 +300,10 @@
 (defun my-backward-word ()
  (interactive)
  (forward-char -1)
- (if (not (beg-of-word-p))
-  (my-backward-word)))
+ (if (bolp)
+  (skip-chars-forward " \t")
+  (if (not (beg-of-word-p))
+   (my-backward-word))))
 
 (defun move-to-end-of-word ()
  (interactive)
@@ -362,6 +364,12 @@
 
 
 
+(defun before-whitespace-p ()
+ (interactive)
+ (member-p (char-before) (list (string-to-char " ") (string-to-char "\t"))))
+
+
+
 (defun exit-white-space ()
  (interactive)
  (if (whitespace-p)
@@ -369,6 +377,22 @@
    (setq end-of-whitespace (cdr (bounds-of-thing-at-point 'whitespace)))
    (goto-char end-of-whitespace))))
 
+
+
+(defun real-beginning-of-line-p ()
+ (or
+  (bolp)
+  (and
+   (before-whitespace-p)
+   (not (whitespace-p)))))
+
+
+
+(defun real-beginning-of-line ()
+ (interactive)
+ (while (not (real-beginning-of-line-p))
+  (progn
+   (forward-char -1))))
 
 (defun exit-white-space-or-forward-word ()
  (interactive)
