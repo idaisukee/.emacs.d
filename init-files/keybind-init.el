@@ -21,7 +21,9 @@
 (define-key helm-map (kbd "C-b") 'delete-backward-char)
 (define-key helm-map (kbd "C-p") 'yank)
 
-
+(add-hook 'markdown-mode-hook
+ '(lambda ()
+   (define-key markdown-mode-map (kbd "C-m") 'newline)))
 
 (add-hook 'dired-mode-hook 
  '(lambda ()
