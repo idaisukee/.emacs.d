@@ -20,7 +20,7 @@
   'edit-text-object
   'web-mode-init
   'migemo-init
-  'appearance-init
+;;  'appearance-init
   ))
-
+(require 'appearance-init)
 (mapcar 'require files-to-require)

@@ -25,12 +25,6 @@
 (when (eq window-system 'ns)
   (setq height 200)
 
-;;; 日本語をヒラギノ角ゴProNにする
-  (set-fontset-font "fontset-default" 'japanese-jisx0208
-    '("Hiragino Mincho ProN"))
-;;; 半角カナをヒラギノ角ゴProNにする
-  (set-fontset-font "fontset-default" 'katakana-jisx0201
-    '("Hiragino Maru Gothic ProN")))
 
 (setq height 100)
 (defun init-face ()
@@ -39,5 +33,13 @@
   :height height))
 
 (init-face)
+
+;;; 半角カナをヒラギノ角ゴProNにする
+  (set-fontset-font "fontset-default" 'katakana-jisx0201
+    '("Hiragino Maru Gothic ProN")))
+
+;;; 日本語をヒラギノ角ゴProNにする
+  (set-fontset-font "fontset-default" 'japanese-jisx0208
+    '("Hiragino Mincho ProN"))
 
 (provide 'appearance-init)
