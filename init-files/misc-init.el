@@ -94,4 +94,5 @@
      ("\\.mp\\'" . "mptopdf %f")
      ("\\.pl\\'" . "perl %f")
      ("\\.py\\'" . "python %f")
-     ("\\.rb\\'" . "ruby %f")))))
+     ("\\.rb\\'" . "ruby %f")
+     ("\\.js\\'" . "nodejs %f")))))
