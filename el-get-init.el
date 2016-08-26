@@ -26,7 +26,7 @@
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
- (lambda ()
+ (progn
   (el-get-bundle! magit)
   (el-get-bundle! elpa:let-alisnt)
   (el-get-bundle! elpa:seq)
