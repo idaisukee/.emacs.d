@@ -117,7 +117,7 @@
    (,(kbd "C-<f8>") . show-lub)
 ;;;(,[f9] . save-buffer)
    (,(kbd "<f9>") . prepare-article-2)
-   (,(kbd "M-b") . prepare-article-2)
+   (,(kbd "M-b") . prepare-article-3)
    (,(kbd "<f11>") . dired-pwd)
    (,(kbd "C-<f11>") . dired)
    (,(kbd "S-<muhenkan>") . delete-window)

@@ -62,6 +62,18 @@ article:
     - public
   tag:"))
 
+
+
+(defun prepare-article-3 ()
+  (interactive)
+  (progn
+    (prepare-article-2)
+    (search-backward "main" nil)
+    (end-of-line)
+    (newline)))
+
+
+
 (defun insert-rc-datetime-jp nil
  (interactive)
  (shell-command "ruby $PRD/src/rc/bin/current_datetime_in_jp.rb" t))
