@@ -45,6 +45,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . coffee-mode))
+(add-to-list 'auto-mode-alist '("\\.blade.php\\'" . web-mode))
 
 (if (string= emacs-version "24.5.1")
  (lambda ()
