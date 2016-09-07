@@ -22,6 +22,6 @@
 (defalias 'gl 'goto-line)
 (defalias 'qr 'query-replace)
 (defalias 'rr 'replace-regexp)
-
+(defalias 'ms 'magit-status)
 
 (provide 'alias-init)
