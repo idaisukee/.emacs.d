@@ -23,5 +23,6 @@
 (defalias 'qr 'query-replace)
 (defalias 'rr 'replace-regexp)
 (defalias 'ms 'magit-status)
+(defalias 'find 'find-name-dired)
 
 (provide 'alias-init)
