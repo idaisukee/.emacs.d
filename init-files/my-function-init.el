@@ -115,5 +115,10 @@ article:
  (interactive)
  (shell-command-on-region (region-beginning) (region-end) "php ~/src/twm/tmhOAuthExamples/cli/tweet.php "))
 
+(defun copy-full-path-to-kill-ring ()
+  "copy buffer's full path to kill ring"
+  (interactive)
+  (when buffer-file-name
+    (kill-new (file-truename buffer-file-name))))
 
 (provide 'my-function-init)
