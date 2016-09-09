@@ -24,5 +24,5 @@
 (defalias 'rr 'replace-regexp)
 (defalias 'ms 'magit-status)
 (defalias 'find 'find-name-dired)
-
+(defalias 'oc 'occur)
 (provide 'alias-init)
