@@ -22,8 +22,6 @@
     '("Migu 1M")))
 
 
-(when (eq window-system 'ns)
-  (setq height 200)
 
 
 (setq height 100)
@@ -34,12 +32,16 @@
 
 (init-face)
 
+(when (eq window-system 'ns)
+  (setq height 200)
+
 ;;; 半角カナをヒラギノ角ゴProNにする
   (set-fontset-font "fontset-default" 'katakana-jisx0201
-    '("Hiragino Maru Gothic ProN")))
+    '("Hiragino Maru Gothic ProN"))
 
 ;;; 日本語をヒラギノ角ゴProNにする
   (set-fontset-font "fontset-default" 'japanese-jisx0208
     '("Hiragino Mincho ProN"))
+)
 
 (provide 'appearance-init)
