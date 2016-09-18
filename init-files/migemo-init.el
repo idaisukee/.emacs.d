@@ -6,7 +6,8 @@
 (setq migemo-dictionary "/usr/share/cmigemo/utf-8/migemo-dict")
 
 (when (eq window-system 'ns)
- (setq migemo-command "/usr/local/bin/cmigemo"))
+ (setq migemo-command "/usr/local/bin/cmigemo")
+ (setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict"))
 
 
 
