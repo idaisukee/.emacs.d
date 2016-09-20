@@ -24,6 +24,7 @@
 (el-get-bundle! open-junk-file)
 (el-get-bundle! markdown-mode)
 (el-get-bundle! coffee-mode)
+(el-get-bundle! ag)
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
