@@ -47,6 +47,9 @@
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.blade.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.scratch\\'" . lisp-interaction-mode))
+(add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.zsh\\'" . shell-script-mode))
+
 
 (if (string= emacs-version "24.5.1")
  (lambda ()
