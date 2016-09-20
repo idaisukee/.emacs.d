@@ -25,4 +25,5 @@
 (defalias 'ms 'magit-status)
 (defalias 'find 'find-name-dired)
 (defalias 'oc 'occur)
+(defalias 'eglp 'el-get-list-packages)
 (provide 'alias-init)
