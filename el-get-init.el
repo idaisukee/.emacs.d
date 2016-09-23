@@ -25,6 +25,8 @@
 (el-get-bundle! markdown-mode)
 (el-get-bundle! coffee-mode)
 (el-get-bundle! ag)
+(el-get-bundle jacktasia/dumb-jump)
+(el-get-bundle m2ym/auto-complete)
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
