@@ -1,3 +1,12 @@
+(defun set-alias (pair)
+	(defalias (car pair) (cdr pair)))
+
+(setq alias-pairs
+ (list
+  '(ho . helm-occur)))
+
+(mapcar 'set-alias alias-pairs)
+
 (defalias 'dk 'describe-key)
 (defalias 'dkb 'describe-key-briefly)
 (defalias 'db 'describe-bindings)
