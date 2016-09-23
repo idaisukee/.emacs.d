@@ -1,5 +1,5 @@
 (defun set-alias (pair)
-	(defalias (car pair) (cdr pair)))
+ (defalias (car pair) (cdr pair)))
 
 (setq alias-pairs
  (list
