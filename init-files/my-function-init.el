@@ -123,4 +123,13 @@ article:
   (when buffer-file-name
     (kill-new (file-truename buffer-file-name))))
 
+(defun comment-or-uncomment-line ()
+ (interactive)
+ (save-excursion
+  (beginning-of-line)
+  (setq beg (point))
+  (end-of-line)
+  (setq end (point))
+  (comment-or-uncomment-region beg end)))
+
 (provide 'my-function-init)

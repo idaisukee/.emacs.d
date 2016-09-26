@@ -164,7 +164,7 @@
    (,(kbd "M-e") . eval-last-sexp)
    (,(kbd "M-;") . delete-window)
    (,(kbd "M-k") . delete-other-windows)
-
+   (,(kbd "M-u") . comment-or-uncomment-line)
    ))
 
 
