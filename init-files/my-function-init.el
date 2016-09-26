@@ -125,11 +125,10 @@ article:
 
 (defun comment-or-uncomment-line ()
  (interactive)
- (save-excursion
-  (beginning-of-line)
-  (setq beg (point))
-  (end-of-line)
-  (setq end (point))
-  (comment-or-uncomment-region beg end)))
+ (beginning-of-line)
+ (setq beg (point))
+ (next-line)
+ (setq end (point))
+ (comment-or-uncomment-region beg end))
 
 (provide 'my-function-init)
