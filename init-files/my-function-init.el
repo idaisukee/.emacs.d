@@ -58,6 +58,7 @@ article:
  (insert-year-date-time)
  (insert "
   main: | 
+    
   range:
     - public
   tag:"))
@@ -67,10 +68,11 @@ article:
 (defun prepare-article-3 ()
   (interactive)
   (progn
-    (prepare-article-2)
-    (search-backward "main" nil)
-    (end-of-line)
-    (newline)))
+   (prepare-article-2)
+   (search-backward "main" nil)
+   (next-line)
+   (end-of-line)))
+
 
 
 
