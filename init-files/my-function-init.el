@@ -131,4 +131,16 @@ article:
  (setq end (point))
  (comment-or-uncomment-region beg end))
 
+
+(defun to-souketu ()
+ (interactive)
+ (set-input-method 'chinese-b5-tsangchi))
+
+(defun to-skk ()
+ (interactive)
+ (set-input-method 'japanese-skk-auto-fill))
+
+
+
+
 (provide 'my-function-init)

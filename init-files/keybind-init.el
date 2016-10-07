@@ -116,7 +116,6 @@
    (,(kbd "<f8>") . toggle-and-print-jitai)
    (,(kbd "C-<f8>") . show-lub)
 ;;;(,[f9] . save-buffer)
-   (,(kbd "<f9>") . prepare-article-2)
    (,(kbd "M-b") . prepare-article-3)
    (,(kbd "<f11>") . dired-pwd)
    (,(kbd "C-<f11>") . dired)
@@ -165,6 +164,8 @@
    (,(kbd "M-;") . delete-window)
    (,(kbd "M-k") . delete-other-windows)
    (,(kbd "M-u") . comment-or-uncomment-line)
+   (,(kbd "<f9>") . to-souketu)
+   (,(kbd "C-<f9>") . to-skk)
    ))
 
 
