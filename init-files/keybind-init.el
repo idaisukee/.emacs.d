@@ -165,7 +165,10 @@
    (,(kbd "M-k") . delete-other-windows)
    (,(kbd "M-u") . comment-or-uncomment-line)
    (,(kbd "<f9>") . to-souketu)
-   (,(kbd "C-<f9>") . to-skk)
+   (,(kbd "C-<f9>") . to-ascii)
+   (,(kbd "<f10>") . sauketu)
+   (,(kbd "C-<f10>") . hiragana)
+
    ))
 
 

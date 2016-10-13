@@ -136,11 +136,20 @@ article:
  (interactive)
  (set-input-method 'chinese-b5-tsangchi))
 
-(defun to-skk ()
+(defun to-ascii ()
  (interactive)
- (set-input-method 'japanese-skk-auto-fill))
+ (set-input-method 'japanese-ascii))
 
 
+(defun hiragana ()
+ (interactive)
+ (set-input-method 'japanese-ascii)
+ (skk-hiragana-set))
+
+(defun sauketu ()
+ (interactive)
+ (set-input-method 'chinese-b5-tsangchi)
+ (skk-latin-mode t))
 
 
 (provide 'my-function-init)
