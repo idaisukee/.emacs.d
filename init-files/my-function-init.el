@@ -144,12 +144,24 @@ article:
 (defun hiragana ()
  (interactive)
  (set-input-method 'japanese-ascii)
- (skk-hiragana-set))
+ (skk-hiragana-set)
+ (setq skk-cursor-latin-color "#884488")
+ (setq hiragana-sauketu "hiragana"))
 
 (defun sauketu ()
  (interactive)
  (set-input-method 'chinese-b5-tsangchi)
- (skk-latin-mode t))
+ (skk-latin-mode t)
+ (setq skk-cursor-latin-color "blue3")
+ (setq hiragana-sauketu "sauketu"))
 
+(defun toggle-hiragana-sauketu ()
+ (interactive)
+ (if (and (boundp 'hiragana-sauketu) (string= hiragana-sauketu "hiragana"))
+  (sauketu)
+  (hiragana)))
 
+(boundp 'hiragana-sauketu)
+
+(if 'nil (princ 'a) (princ 'b))
 (provide 'my-function-init)

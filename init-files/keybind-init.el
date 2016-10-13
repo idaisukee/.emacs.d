@@ -168,6 +168,7 @@
    (,(kbd "C-<f9>") . to-ascii)
    (,(kbd "<f10>") . sauketu)
    (,(kbd "C-<f10>") . hiragana)
+   (,(kbd "C-;") . toggle-hiragana-sauketu)
 
    ))
 
