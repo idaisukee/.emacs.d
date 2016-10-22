@@ -163,7 +163,4 @@ article:
   (ieremii-sauketu)
   (ieremii-hiragana)))
 
-(boundp 'hiragana-sauketu)
-
-(if 'nil (princ 'a) (princ 'b))
 (provide 'my-function-init)
