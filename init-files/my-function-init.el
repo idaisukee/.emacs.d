@@ -132,14 +132,6 @@ article:
  (comment-or-uncomment-region beg end))
 
 
-(defun to-souketu ()
- (interactive)
- (set-input-method 'chinese-b5-tsangchi))
-
-(defun to-ascii ()
- (interactive)
- (set-input-method 'japanese-ascii))
-
 
 (defun ieremii-hiragana ()
  (interactive)
