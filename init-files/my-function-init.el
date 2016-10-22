@@ -144,7 +144,6 @@ article:
  (interactive)
  (set-input-method 'chinese-b5-tsangchi)
  (skk-latin-mode t)
- (setq skk-cursor-latin-color "blue3")
  (setq ieremii-input-mode "sauketu"))
 
 
@@ -152,8 +151,9 @@ article:
 (defun ieremii-latin ()
  (interactive)
  (set-input-method 'japanese-skk)
- (skk-latin-mode t)
- (setq ieremii-input-mode "latin"))
+ (setq ieremii-input-mode "latin")
+ (setq skk-cursor-latin-color "blue3")
+ (skk-latin-mode t))
 
 
 (defun ieremii-next-input-mode ()

@@ -23,7 +23,6 @@
 
 (setq skk-cursor-hiragana-color kyu-cursor-hiragana-color)
 (setq skk-cursor-katakana-color "green3")
-(setq skk-cursor-latin-color "#884488")
 (setq skk-isearch-mode-enable nil)
 (setq skk-large-jisyo "~/ldic_kyuji.dic")
 (setq skk-jisyo "~/udic_kyuji.dic")
