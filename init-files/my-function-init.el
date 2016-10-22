@@ -141,25 +141,27 @@ article:
  (set-input-method 'japanese-ascii))
 
 
-(defun hiragana ()
+(defun ieremii-hiragana ()
  (interactive)
  (set-input-method 'japanese-skk)
  (skk-hiragana-set)
  (setq skk-cursor-latin-color "#884488")
  (setq hiragana-sauketu "hiragana"))
 
-(defun sauketu ()
+(defun ieremii-sauketu ()
  (interactive)
  (set-input-method 'chinese-b5-tsangchi)
  (skk-latin-mode t)
  (setq skk-cursor-latin-color "blue3")
  (setq hiragana-sauketu "sauketu"))
 
-(defun toggle-hiragana-sauketu ()
+
+
+(defun ieremii-toggle-hiragana-sauketu ()
  (interactive)
  (if (and (boundp 'hiragana-sauketu) (string= hiragana-sauketu "hiragana"))
-  (sauketu)
-  (hiragana)))
+  (ieremii-sauketu)
+  (ieremii-hiragana)))
 
 (boundp 'hiragana-sauketu)
 
