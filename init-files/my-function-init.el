@@ -143,7 +143,7 @@ article:
 
 (defun hiragana ()
  (interactive)
- (set-input-method 'japanese-ascii)
+ (set-input-method 'japanese-skk)
  (skk-hiragana-set)
  (setq skk-cursor-latin-color "#884488")
  (setq hiragana-sauketu "hiragana"))
