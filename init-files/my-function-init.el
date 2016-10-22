@@ -162,6 +162,20 @@ article:
  (skk-latin-mode t)
  (setq ieremii-input-mode "latin"))
 
+
+(defun ieremii-next-input-mode ()
+ (interactive)
+ (cond
+  ((or
+    (not (boundp 'ieremii-input-mode))
+    (string= ieremii-input-mode "latin"))
+   (ieremii-hiragana))
+  ((string= ieremii-input-mode "hiragana")
+   (ieremii-sauketu))
+  ((string= ieremii-input-mode "sauketu")
+   (ieremii-latin))))
+
+
 (defun ieremii-toggle-hiragana-sauketu ()
  (interactive)
  (if (and (boundp 'ieremii-input-mode) (string= ieremii-input-mode "hiragana"))
