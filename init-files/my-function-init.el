@@ -169,6 +169,19 @@ article:
    (ieremii-latin))))
 
 
+
+(defun ieremii-revert-input-mode ()
+ (interactive)
+ (cond
+  ((or
+    (not (boundp 'ieremii-input-mode))
+    (string= ieremii-input-mode "latin"))
+   (ieremii-latin))
+  ((string= ieremii-input-mode "hiragana")
+   (ieremii-hiragana))
+  ((string= ieremii-input-mode "sauketu")
+   (ieremii-sauketu))))
+
 (defun ieremii-toggle-hiragana-sauketu ()
  (interactive)
  (if (and (boundp 'ieremii-input-mode) (string= ieremii-input-mode "hiragana"))
