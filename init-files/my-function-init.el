@@ -159,6 +159,7 @@ article:
 
 (defun ieremii-latin ()
  (interactive)
+ (set-input-method 'japanese-skk)
  (skk-latin-mode t)
  (setq ieremii-input-mode "latin"))
 
