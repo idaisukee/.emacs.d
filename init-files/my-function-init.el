@@ -188,4 +188,15 @@ article:
   (ieremii-sauketu)
   (ieremii-hiragana)))
 
+(add-hook
+ 'helm-before-initialize-hook
+ 'ieremii-latin-for-minibuffer)
+
+(defun ieremii-latin-for-minibuffer nil
+ (set-input-method 'latin-prefix))
+
+(add-hook
+ 'helm-cleanup-hook
+ 'ieremii-revert-input-mode)
+
 (provide 'my-function-init)
