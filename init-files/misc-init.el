@@ -102,3 +102,5 @@
      ("\\.py\\'" . "python %f")
      ("\\.rb\\'" . "ruby %f")
      ("\\.js\\'" . "nodejs %f")))))
+
+(add-hook 'php-mode-hook 'helm-gtags-mode)
