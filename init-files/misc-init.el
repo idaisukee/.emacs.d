@@ -71,6 +71,14 @@
 (custom-set-variables
  '(open-junk-file-format (s-concat (getenv "SRC") "/junk/%Y-%m-%d-%H%M%S.") t))
 
+(setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/branchname.rb"))
+(if
+ (file-exists-p ieremii-prd-now)
+ (progn
+  (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
+  (setq ieremii-junk-file-name (shell-command-to-string ieremii-prd-now-command))
+  (custom-set-variables
+   '(open-junk-file-format (s-concat (getenv "SRC") "/junk/" ieremii-junk-file-name ".") t))))
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
