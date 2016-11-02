@@ -92,7 +92,7 @@
    (,(kbd "C-x C-h") . skk-mode)
    (,(kbd "C-S-a") . move-to-open-paren)
    (,(kbd "C-S-u") . move-to-close-paren)
-   (,(kbd "C-x j") . open-junk-file)
+   (,(kbd "C-x j") . ieremii-open-junk-file)
    (,(kbd "C-b") . delete-backward-char)
    (,(kbd "C-S-b") . ieremii-backward-kill-word)
    (,(kbd "C-S-k") . ieremii-kill-line-contents)
