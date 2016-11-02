@@ -199,4 +199,10 @@ article:
  'helm-cleanup-hook
  'ieremii-revert-input-mode)
 
+
+(defun ieremii-return-to-mark nil
+ (interactive)
+ (set-mark-command t))
+
+
 (provide 'my-function-init)
