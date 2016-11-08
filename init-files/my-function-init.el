@@ -40,6 +40,31 @@
  (interactive)
  (insert (format-time-string "%Y %m%d %H%M" (current-time))))
 
+
+(defun ieremii-insert-prd nil
+ (interactive)
+ (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/prd_now.rb"))
+ (if
+  (file-exists-p ieremii-prd-now)
+  (progn
+   (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
+   (setq ieremii-prd (shell-command-to-string ieremii-prd-now-command))
+   (insert ieremii-prd))))
+
+
+
+(defun ieremii-insert-rc-ajd nil
+ (interactive)
+ (setq ieremii-rc-ajd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_now.rb"))
+ (if
+  (file-exists-p ieremii-rc-ajd-now)
+  (progn
+   (setq ieremii-rc-ajd-now-command (s-concat "ruby " ieremii-rc-ajd-now))
+   (setq ieremii-rc-ajd (shell-command-to-string ieremii-rc-ajd-now-command))
+   (insert ieremii-rc-ajd))))
+
+
+
 (defun prepare-article nil
  (interactive)
  (insert "---
@@ -72,6 +97,35 @@ article:
    (search-backward "main" nil)
    (next-line)
    (end-of-line)))
+
+
+
+(defun prepare-prd-article-2 nil
+ (interactive)
+ (insert "- prd: ")
+ (ieremii-insert-prd)
+ (insert "
+")
+ (insert "  rc_ajd: ")
+ (ieremii-insert-rc-ajd)
+ (insert "
+  main: | 
+    
+  range:
+    - public
+  tag:"))
+
+
+(defun prepare-prd-article-3 ()
+  (interactive)
+  (progn
+   (prepare-prd-article-2)
+   (search-backward "main" nil)
+   (next-line)
+   (end-of-line)))
+
+
+
 
 
 
