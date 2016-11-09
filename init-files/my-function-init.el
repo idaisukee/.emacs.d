@@ -206,7 +206,7 @@ article:
  (interactive)
  (set-input-method 'japanese-skk)
  (setq ieremii-input-mode "latin")
- (setq skk-cursor-latin-color "blue3")
+ (setq skk-cursor-latin-color "#deafbf")
  (skk-latin-mode t))
 
 
