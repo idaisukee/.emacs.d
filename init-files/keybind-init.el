@@ -123,6 +123,8 @@
    (,(kbd "C-h") . next-line)
    (,(kbd "C-t") . previous-line)
    (,(kbd "C-n") . forward-char)
+   (,(kbd "C-f") . goto-last-change)
+   (,(kbd "C-S-f") . goto-last-change-reverse)
    (,(kbd "M-o") . find-file-at-point)
    (,(kbd "M-O") . helm-for-files)
    (,(kbd "C-S-d") . my-backward-word)

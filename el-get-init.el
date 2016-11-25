@@ -28,6 +28,7 @@
 (el-get-bundle jacktasia/dumb-jump)
 (el-get-bundle m2ym/auto-complete)
 (el-get-bundle helm-gtags)
+(el-get-bundle goto-chg)
 ;;;(el-get-bundle! magit)
 
 (if (string= emacs-version "24.5.1")
