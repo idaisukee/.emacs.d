@@ -30,6 +30,7 @@
 (el-get-bundle helm-gtags)
 (el-get-bundle goto-chg)
 ;;;(el-get-bundle! magit)
+(el-get-bundle! helm-descbinds)
 
 (if (string= emacs-version "24.5.1")
  (progn
