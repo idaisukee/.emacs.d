@@ -20,6 +20,7 @@
   'edit-text-object
   'web-mode-init
   'migemo-init
+  'howdoi-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)
