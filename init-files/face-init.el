@@ -136,6 +136,12 @@
    ((t (
         :family "Inconsolata"
         :weight normal))))
+ '(diff-header
+   ((t (
+        :family "Inconsolata"
+        :weight normal
+        :background "#b16b00"))))
+
 )
   
 
