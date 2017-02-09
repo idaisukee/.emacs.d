@@ -260,7 +260,7 @@ article:
 
 (defun ieremii-open-junk-file nil
  (interactive)
- (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/branchname.rb"))
+ (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_branchname.rb"))
  (if
   (file-exists-p ieremii-prd-now)
   (progn
