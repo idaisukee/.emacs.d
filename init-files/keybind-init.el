@@ -107,7 +107,7 @@
    (,(kbd "<f7>") . toggle-and-print-skk-kutouten-type)
    (,(kbd "<f8>") . toggle-and-print-jitai)
    (,(kbd "C-<f8>") . show-lub)
-   (,(kbd "M-b") . prepare-prd-article-3)
+   (,(kbd "M-b") . find-file-and-prepare-prd-article)
    (,(kbd "<f11>") . dired-pwd)
    (,(kbd "C-<f11>") . dired)
    (,(kbd "S-<muhenkan>") . delete-window)

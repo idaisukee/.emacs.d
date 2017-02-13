@@ -53,7 +53,7 @@
 
 
 
-(defun ieremii-insert-rc-ajd nil
+(defun ieremii-insert-rc-ajd nilh
  (interactive)
  (setq ieremii-rc-ajd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_now.rb"))
  (if
@@ -126,6 +126,17 @@ article:
 
 
 
+(defun find-file-and-prepare-prd-article ()
+ (interactive)
+ (progn
+  (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_branchname.rb"))
+  (if
+   (file-exists-p ieremii-prd-now)
+   (progn
+    (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
+    (setq ieremii-article-file-name (s-concat (getenv "PRD") "/doc/weblog/prd/" (shell-command-to-string ieremii-prd-now-command) ".yml"))
+    (find-file ieremii-article-file-name)
+    (prepare-prd-article-3)))))
 
 
 
