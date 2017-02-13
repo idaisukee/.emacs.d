@@ -53,7 +53,7 @@
 
 
 
-(defun ieremii-insert-rc-ajd nilh
+(defun ieremii-insert-rc-ajd nil
  (interactive)
  (setq ieremii-rc-ajd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_now.rb"))
  (if
