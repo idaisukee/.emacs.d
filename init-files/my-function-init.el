@@ -275,6 +275,7 @@ article:
  (if
   (file-exists-p ieremii-prd-now)
   (progn
+   (find-file (getenv "HOME"))
    (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
    (setq ieremii-junk-file-name (shell-command-to-string ieremii-prd-now-command))
    (custom-set-variables
