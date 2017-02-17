@@ -32,6 +32,8 @@
 ;;;(el-get-bundle! magit)
 (el-get-bundle! helm-descbinds)
 (el-get-bundle howdoi)
+(el-get-bundle Wilfred/ez-query-replace.el)
+
 
 (if (string= emacs-version "24.5.1")
  (progn
