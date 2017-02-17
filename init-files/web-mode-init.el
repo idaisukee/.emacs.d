@@ -5,7 +5,8 @@
  'web-mode-hook
  '(lambda ()
    (setq web-mode-engines-alist
-    '(("php"    . "\\.ctp\\'"))
+    '(("php"    . "\\.ctp\\'")
+      ("blade"  . "\\.blade\\."))
     )
    ))
 
