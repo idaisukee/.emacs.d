@@ -105,3 +105,4 @@
      ("\\.js\\'" . "nodejs %f")))))
 
 (add-hook 'php-mode-hook 'helm-gtags-mode)
+(require 'generic-x)
