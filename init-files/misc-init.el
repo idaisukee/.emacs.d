@@ -106,3 +106,4 @@
 
 (add-hook 'php-mode-hook 'helm-gtags-mode)
 (require 'generic-x)
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
