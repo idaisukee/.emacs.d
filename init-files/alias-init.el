@@ -31,7 +31,9 @@
   '(ms . magit-status)
   '(find . find-name-dired)
   '(oc . occur)
-  '(eglp . el-get-list-packages)))
+  '(eglp . el-get-list-packages)
+  '(rg . rgrep)
+  '(er . er/expand-region)))
 
 (mapcar 'set-alias alias-pairs)
 (provide 'alias-init)
