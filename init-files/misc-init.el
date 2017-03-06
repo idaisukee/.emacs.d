@@ -102,6 +102,7 @@
      ("\\.pl\\'" . "perl %f")
      ("\\.py\\'" . "python %f")
      ("\\.rb\\'" . "ruby %f")
+     ("\\.coffee\\'" . "coffee %f")
      ("\\.js\\'" . "node %f")))))
 
 (add-hook 'php-mode-hook 'helm-gtags-mode)
