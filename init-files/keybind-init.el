@@ -156,6 +156,7 @@
    (,(kbd "M-;") . delete-window)
    (,(kbd "M-k") . delete-other-windows)
    (,(kbd "M-u") . comment-or-uncomment-line)
+   (,(kbd "M-/") . helm-dabbrev)
    (,(kbd "C-z") . ieremii-next-input-mode)
    (,(kbd "C-S-SPC") . ieremii-return-to-mark)
 
