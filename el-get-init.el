@@ -34,6 +34,7 @@
 (el-get-bundle howdoi)
 (el-get-bundle Wilfred/ez-query-replace.el)
 (el-get-bundle! expand-region)
+(el-get-bundle! gnugo)
 
 (if (string= emacs-version "24.5.1")
  (progn
