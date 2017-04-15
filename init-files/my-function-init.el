@@ -282,4 +282,13 @@ article:
     '(open-junk-file-format (s-concat (getenv "SRC") "/junk/" ieremii-junk-file-name ".") t))
    (open-junk-file))))
 
+(defun ieremii-insert-require-rdatetime nil
+ (interactive)
+ (let*
+  ((rdatetime-path (s-concat (getenv "SRC") "/rdatetime/r_date_time.rb"))
+  (require-statement (s-concat "require " "'" rdatetime-path "'\n")))
+  (insert require-statement)))
+
+ 
+
 (provide 'my-function-init)
