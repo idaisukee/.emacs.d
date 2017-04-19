@@ -85,7 +85,6 @@
    (,(kbd "C-S-p") . yank-pop)
    (,(kbd "C-d") . backward-char)
    (,(kbd "C-S-z") . toggle-and-print-jitai)
-   (,(kbd "C-S-v") . scroll-down-command)
    (,(kbd "<backtab>") . save-buffer)
    (,(kbd "M-s") . save-buffer)
    (,(kbd "C-a") . beginning-of-line)
@@ -159,6 +158,8 @@
    (,(kbd "M-/") . helm-dabbrev)
    (,(kbd "C-z") . ieremii-next-input-mode)
    (,(kbd "C-S-SPC") . ieremii-return-to-mark)
+   (,(kbd "C-v") . ieremii-replace-char)
+   (,(kbd "C-S-v") . ieremii-lookup-sauketu)
 
    ))
 

@@ -291,4 +291,21 @@ article:
 
  
 
+(defun ieremii-replace-char nil
+ (interactive)
+ (save-excursion
+  (backward-char)
+  (set-mark-command nil)
+  (forward-char)
+  (shell-command-on-region (region-beginning) (region-end) "ruby /home/ieremius/prd/src/Yunoki.rb/Yunoki.rb" nil t))
+ (forward-char))
+
+(defun ieremii-lookup-sauketu nil
+ (interactive)
+ (save-excursion
+  (backward-char)
+  (set-mark-command nil)
+  (forward-char)
+  (lgrep (region-to-string (region-beginning) (region-end)) "/home/ieremius/prd/doc/pub/sauketu/all/0.dat")))
+
 (provide 'my-function-init)
