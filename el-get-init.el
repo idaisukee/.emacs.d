@@ -36,7 +36,7 @@
 (el-get-bundle! expand-region)
 (el-get-bundle! gnugo)
 (el-get-bundle! summarye)
-
+(el-get-bundle! eldoc-extension)
 (if (string= emacs-version "24.5.1")
  (progn
   (el-get-bundle! magit)

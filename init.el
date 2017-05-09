@@ -21,6 +21,7 @@
   'web-mode-init
   'migemo-init
   'howdoi-init
+  'eldoc-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)
