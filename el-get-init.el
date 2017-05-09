@@ -37,6 +37,7 @@
 (el-get-bundle! gnugo)
 (el-get-bundle! summarye)
 (el-get-bundle! eldoc-extension)
+(el-get-bundle visual-regexp)
 (if (string= emacs-version "24.5.1")
  (progn
   (el-get-bundle! magit)
