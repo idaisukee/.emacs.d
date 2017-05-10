@@ -20,6 +20,7 @@
 (define-key helm-map (kbd "C-r") 'delete-char)
 (define-key helm-map (kbd "C-b") 'delete-backward-char)
 (define-key helm-map (kbd "C-p") 'yank)
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
 
 (define-key anything-map (kbd "C-a") 'beginning-of-line)
 (define-key anything-map (kbd "C-u") 'end-of-line)
