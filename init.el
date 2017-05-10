@@ -22,6 +22,7 @@
   'migemo-init
   'howdoi-init
   'eldoc-init
+  'anything-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)

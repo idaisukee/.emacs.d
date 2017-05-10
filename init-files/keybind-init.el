@@ -21,6 +21,19 @@
 (define-key helm-map (kbd "C-b") 'delete-backward-char)
 (define-key helm-map (kbd "C-p") 'yank)
 
+(define-key anything-map (kbd "C-a") 'beginning-of-line)
+(define-key anything-map (kbd "C-u") 'end-of-line)
+(define-key anything-map (kbd "C-d") 'backward-char)
+(define-key anything-map (kbd "C-h") 'anything-next-line)
+(define-key anything-map (kbd "C-t") 'anything-previous-line)
+(define-key anything-map (kbd "C-n") 'forward-char)
+(define-key anything-map (kbd "C-o") 'anything-next-page)
+(define-key anything-map (kbd "C-e") 'anything-previous-page)
+(define-key anything-map (kbd "C-r") 'delete-char)
+(define-key anything-map (kbd "C-b") 'delete-backward-char)
+(define-key anything-map (kbd "C-p") 'yank)
+
+
 (add-hook 'markdown-mode-hook
  '(lambda ()
    (define-key markdown-mode-map (kbd "C-m") 'newline)))
