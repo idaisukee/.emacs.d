@@ -5,7 +5,7 @@
 (defun howdoi-show-url (&rest ignore)
   (interactive)
   (message "%s" howdoi-current-stackoverflow-url))
-(advice-add 'howdoi-pop-answer-to-buffer-callback :after 'howdoi-show-url)
+;;; (advice-add 'howdoi-pop-answer-to-buffer-callback :after 'howdoi-show-url) 
 ;;; cで現在のURLを表示する
 (define-key howdoi-mode-map (kbd "c") 'howdoi-show-url)
 
