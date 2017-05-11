@@ -39,6 +39,7 @@
   '(sd . backward-sexp)
   '(st . backward-up-list)
   '(sh . down-list)
+  '(noma . ieremii-insert-noma)
 ))
 
 (mapcar 'set-alias alias-pairs)

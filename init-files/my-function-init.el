@@ -308,4 +308,8 @@ article:
   (forward-char)
   (lgrep (region-to-string (region-beginning) (region-end)) "/home/ieremius/prd/doc/pub/sauketu/all/0.dat")))
 
+(defun ieremii-insert-noma nil
+ (interactive)
+ (insert "々"))
+
 (provide 'my-function-init)
