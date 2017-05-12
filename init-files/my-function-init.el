@@ -258,7 +258,8 @@ article:
  'ieremii-latin-for-minibuffer)
 
 (defun ieremii-latin-for-minibuffer nil
- (set-input-method 'latin-prefix))
+ (set-input-method 'latin-prefix)
+ (toggle-input-method))
 
 (add-hook
  'helm-cleanup-hook
