@@ -21,6 +21,7 @@
 (define-key helm-map (kbd "C-b") 'delete-backward-char)
 (define-key helm-map (kbd "C-p") 'yank)
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-z") 'ieremii-next-input-mode)
 
 (define-key anything-map (kbd "C-a") 'beginning-of-line)
 (define-key anything-map (kbd "C-u") 'end-of-line)
