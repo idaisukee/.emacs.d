@@ -141,7 +141,12 @@
         :family "Inconsolata"
         :weight normal
         :background "#b16b00"))))
-
+ '(Man-overstrike
+   ((t (
+        :family "Inconsolata"
+        :weight normal
+        :foreground "#ca5ba3"
+        :underline t))))
 )
   
 
