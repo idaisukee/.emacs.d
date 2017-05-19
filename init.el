@@ -27,4 +27,4 @@
 ;;  'appearance-init
   ))
 (require 'appearance-init)
-(mapcar 'require files-to-require)
+(-map 'require files-to-require)
