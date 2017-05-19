@@ -1,3 +1,5 @@
+(setq dired-dwim-target t)
+
 (define-key dired-mode-map (kbd "g") 'dired-k)
 
 (add-hook 'dired-initial-position-hook 'dired-k)
