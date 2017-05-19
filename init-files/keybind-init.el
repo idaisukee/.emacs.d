@@ -75,7 +75,9 @@
 (define-key minibuffer-local-map (kbd "M-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "M-h") 'next-history-element)
 
-
+(defun ieremii-previous-window nil
+ (interactive)
+ (other-window -1))
 
 
 ;; (makunbound 'overriding-minor-mode-map)
@@ -160,12 +162,10 @@
    (,(kbd "M-_") . incr-height-10)
    (,(kbd "M-m") . helm-mini)
    (,(kbd "M-c") . smart-compile)
-   (,(kbd "M-q") . previous-buffer)
-   (,(kbd "M-j") . next-buffer)
    (,(kbd "M-v") . evil-mode)
    (,(kbd "C-k") . ieremii-kill-line)
-   (,(kbd "M-q") . previous-buffer)
-   (,(kbd "M-j") . next-buffer)
+   (,(kbd "M-q") . ieremii-previous-window)
+   (,(kbd "M-j") . other-window)
    (,(kbd "M-e") . eval-last-sexp)
    (,(kbd "M-;") . delete-window)
    (,(kbd "M-k") . delete-other-windows)
