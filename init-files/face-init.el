@@ -147,6 +147,10 @@
         :weight normal
         :foreground "#ca5ba3"
         :underline t))))
+ '(dired-k-directory
+   ((t (
+        :background "#991122"
+        :foreground "white"))))
 )
   
 
