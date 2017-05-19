@@ -23,6 +23,7 @@
   'howdoi-init
   'eldoc-init
   'anything-init
+  'dired-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)
