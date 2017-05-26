@@ -39,6 +39,8 @@
 (el-get-bundle visual-regexp)
 (el-get-bundle anything)
 (el-get-bundle! dired-k)
+(el-get-bundle! yatex)
+
 (if (string= emacs-version "24.5.1")
  (progn
   (el-get-bundle! magit)
