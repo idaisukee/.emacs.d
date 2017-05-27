@@ -151,6 +151,14 @@
    ((t (
         :background "#991122"
         :foreground "white"))))
+ '(tex-verbatim
+   ((t (
+        :family "Inconsolata"))))
+ '(apropos-symbol
+   ((t (
+       :inherit nil
+       :underline t
+        :background "#af3320"))))
 )
   
 
