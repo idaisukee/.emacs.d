@@ -41,9 +41,15 @@
 (el-get-bundle! dired-k)
 (el-get-bundle! yatex)
 
-(if (string= emacs-version "24.5.1")
+(if
+ (or
+  (string= emacs-version "24.5.1")
+  (string= emacs-version "25.2.2"))
+ (el-get-bundle! magit))
+
+(if
+ (string= emacs-version "24.5.1")
  (progn
-  (el-get-bundle! magit)
   (el-get-bundle! elpa:let-alisnt)
   (el-get-bundle! elpa:seq)
   (el-get-bundle! flycheck/flycheck)
