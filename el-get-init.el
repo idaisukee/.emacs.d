@@ -7,7 +7,6 @@
     (eval-print-last-sexp)))
 
 (el-get-bundle! f)
-(el-get-bundle! helm)
 (el-get-bundle! php-mode)
 (el-get-bundle! yaml-mode)
 (el-get-bundle ddskk)
@@ -26,10 +25,8 @@
 (el-get-bundle! coffee-mode)
 (el-get-bundle! ag)
 (el-get-bundle jacktasia/dumb-jump)
-(el-get-bundle helm-gtags)
 (el-get-bundle goto-chg)
 ;;;(el-get-bundle! magit)
-(el-get-bundle! helm-descbinds)
 (el-get-bundle howdoi)
 (el-get-bundle Wilfred/ez-query-replace.el)
 (el-get-bundle! expand-region)
