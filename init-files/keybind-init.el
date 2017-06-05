@@ -158,7 +158,7 @@
    (,(kbd "C-S-SPC") . ieremii-return-to-mark)
    (,(kbd "C-v") . ieremii-replace-char)
    (,(kbd "C-S-v") . ieremii-lookup-sauketu)
-   (,(kbd "M-h") . quail-select-current)
+   (,(kbd "M-g") . magit-status)
    ))
 
 
