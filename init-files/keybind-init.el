@@ -85,7 +85,7 @@
    (,(kbd "<tab>") . execute-extended-command)
    (,(kbd "M-'") . execute-extended-command)
    (,(kbd "C-p") . yank)
-   (,(kbd "C-S-p") . yank-pop)
+   (,(kbd "C-S-p") . anything-show-kill-ring)
    (,(kbd "C-d") . backward-char)
    (,(kbd "C-S-z") . toggle-and-print-jitai)
    (,(kbd "<backtab>") . save-buffer)
