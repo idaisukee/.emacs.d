@@ -40,6 +40,7 @@
   '(st . backward-up-list)
   '(sh . down-list)
   '(noma . ieremii-insert-noma)
+  '(yee . YaTeX-end-environment)
 ))
 
 (mapcar 'set-alias alias-pairs)
