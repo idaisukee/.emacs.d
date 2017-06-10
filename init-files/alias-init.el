@@ -3,7 +3,7 @@
 
 (setq alias-pairs
  (list
-  '(ho . helm-occur)
+  '(ao . anything-occur)
   '(dk . describe-key)
   '(dkb . describe-key-briefly)
   '(db . describe-bindings)
