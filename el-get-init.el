@@ -37,6 +37,7 @@
 (el-get-bundle anything)
 (el-get-bundle! dired-k)
 (el-get-bundle! yatex)
+(el-get-bundle! yasnippet)
 
 (if
  (or
