@@ -11,7 +11,6 @@
 
 (setq files-to-require
  (list
-  'keybind-init
   'misc-init
   'my-function-init
   'alias-init
@@ -26,6 +25,7 @@
   'eldoc-init
   'anything-init
   'dired-init
+  'bind-key-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)
