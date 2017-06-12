@@ -10,7 +10,6 @@
  ("C-e" . scroll-down-command)
  ("C-S-e" . beginning-of-buffer)
  ("C-S-o" . end-of-buffer)
-
  ("<tab>" . execute-extended-command)
  ("M-'" . anything-M-x)
  ("C-p" . yank)
