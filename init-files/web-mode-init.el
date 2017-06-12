@@ -10,6 +10,12 @@
     )
    ))
 
+(defun ieremii-php-tag-expansion-config nil
+ (let* ((cell (assoc "php" web-mode-engines-auto-pairs)))
+  (setf (cdr cell) (cddr cell))))
+
+(ieremii-php-tag-expansion-config)
+
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
  (setq web-mode-block-padding 0)
