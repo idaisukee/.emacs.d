@@ -12,7 +12,7 @@
  ("C-S-o" . end-of-buffer)
 
  ("<tab>" . execute-extended-command)
- ("M-'" . execute-extended-command)
+ ("M-'" . anything-M-x)
  ("C-p" . yank)
  ("C-S-p" . anything-show-kill-ring)
  ("C-d" . backward-char)
@@ -48,7 +48,6 @@
  ("<down>" . next-line)
  ("C-r" . delete-char)
  ("C-S-r" . ieremii-kill-word)
- ("C-S-k"  . kill-sentence)
  ("C-d" . backward-char)
  ("C-h" . next-line)
  ("C-t" . previous-line)
