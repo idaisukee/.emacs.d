@@ -26,6 +26,7 @@
   'anything-init
   'dired-init
   'bind-key-init
+  'yasnippet-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)
