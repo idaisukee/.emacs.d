@@ -39,6 +39,7 @@
 (el-get-bundle! yatex)
 (el-get-bundle! yasnippet)
 (el-get-bundle! use-package)
+(el-get-bundle! ht)
 
 (if
  (or
