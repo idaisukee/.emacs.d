@@ -97,7 +97,7 @@
           (powerline-narrow face0 'l)
           (powerline-raw " " face1)
           ;;          (funcall separator-left face1 face2)
-          (powerline-vc face4 'r)
+          (powerline-vc face0 'r)
           (when (bound-and-true-p nyan-mode)
            (powerline-raw (list (nyan-create)) face0 'l))))
         (rhs
