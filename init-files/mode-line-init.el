@@ -21,9 +21,10 @@
           (when (eq mode major-mode)
             (setq mode-name mode-str)))))
 
-(add-hook 'after-change-major-mode-hook 'clean-mode-line)
+;(add-hook 'after-change-major-mode-hook 'clean-mode-line)
 
 
 (setq mode-line-format
-          (list "%b %F %s %P"))
+          (list "%b %f %I %n %Z %["))
 
+(provide 'mode-line-init)
