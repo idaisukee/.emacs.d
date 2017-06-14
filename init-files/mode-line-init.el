@@ -21,10 +21,15 @@
           (when (eq mode major-mode)
             (setq mode-name mode-str)))))
 
-;(add-hook 'after-change-major-mode-hook 'clean-mode-line)
+;;(add-hook 'after-change-major-mode-hook 'clean-mode-line)
 
 
-(setq mode-line-format
-          (list "%b %f %I %n %Z %["))
+;;(setq mode-line-format (list "%b %f %I %n %Z %["))
+
+(setq
+ mode-line-format
+ '("" skk-modeline-input-mode "%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
+ (vc-mode vc-mode)
+ "  " mode-line-modes mode-line-misc-info mode-line-end-spaces))
 
 (provide 'mode-line-init)

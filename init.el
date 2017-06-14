@@ -11,7 +11,7 @@
 
 (setq files-to-require
  (list
-;;  'mode-line-init
+  'mode-line-init
   'misc-init
   'my-function-init
   'alias-init
