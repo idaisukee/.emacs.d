@@ -1,4 +1,3 @@
-;;;(load-theme 'manoj-dark t)
 (load-theme 'deeper-blue t)
 
 
