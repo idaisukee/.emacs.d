@@ -40,6 +40,7 @@
 (el-get-bundle! yasnippet)
 (el-get-bundle! use-package)
 (el-get-bundle! ht)
+(el-get-bundle! powerline)
 
 (if
  (or
