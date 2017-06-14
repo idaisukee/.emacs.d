@@ -280,7 +280,7 @@ article:
    (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
    (setq ieremii-junk-file-name (shell-command-to-string ieremii-prd-now-command))
    (custom-set-variables
-    '(open-junk-file-format (s-concat (getenv "SRC") "/junk/" ieremii-junk-file-name ".") t))
+    '(open-junk-file-format (s-concat (getenv "SRC") "/priv/junk/" ieremii-junk-file-name ".") t))
    (open-junk-file))))
 
 (defun ieremii-insert-require-rdatetime nil

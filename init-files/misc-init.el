@@ -67,11 +67,6 @@
  (lambda ()
   (setq css-indent-offset 2)))
 
-(custom-set-variables
- '(open-junk-file-format (s-concat (getenv "SRC") "/junk/%Y-%m-%d-%H%M%S.") t))
-
-
-
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
