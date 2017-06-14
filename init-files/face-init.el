@@ -66,7 +66,7 @@
         :foreground "DodgerBlue1"))))
  '(font-lock-builtin-face
    ((t (
-        :foreground "#E54028"))))
+        :foreground "#D95B43"))))
  '(mode-line
    ((t (
         :inherit default
