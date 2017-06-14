@@ -28,5 +28,6 @@
   'bind-key-init
   'yasnippet-init
   'powerline-init
+  'smart-compile-init
   ))
 (-map 'require files-to-require)
