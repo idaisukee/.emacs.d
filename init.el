@@ -29,5 +29,6 @@
   'yasnippet-init
   'powerline-init
   'smart-compile-init
+  'auto-mode-init
   ))
 (-map 'require files-to-require)
