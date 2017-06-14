@@ -51,24 +51,6 @@
   "ieremii face 0."
  :group 'powerline)
 
-
-(defface ieremii-face1
- '((t
-    (
-     :background "#bb00bb"
-     :inherit mode-line)))
-  "ieremii face 1."
- :group 'powerline)
-
-(defface ieremii-face2
- '((t
-    (
-     :background "#990099"
-     :inherit mode-line)))
-  "ieremii face 1."
- :group 'powerline)
-
-
 (defun powerline-ieremii-theme ()
   "Setup the default mode-line."
   (interactive)
