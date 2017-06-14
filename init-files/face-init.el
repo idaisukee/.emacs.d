@@ -70,7 +70,7 @@
  '(mode-line
    ((t (
         :inherit default
-        :background "#32742C"
+        :background "#a7dbd8"
         :foreground "white"
         :box nil
         :weight normal))))

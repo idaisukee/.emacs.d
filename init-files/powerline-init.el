@@ -2,9 +2,20 @@
  '((t
     (
      :background "#69d2e7"
+     :foreground "blue"
      :inherit mode-line)))
   "ieremii face 0."
  :group 'powerline)
+
+(defface ieremii-aoi-variant
+ '((t
+    (
+     :background "#69d2e7"
+     :foreground "#f38630"
+     :inherit mode-line)))
+  "ieremii face 0."
+ :group 'powerline)
+
 
 (defface ieremii-clean-pondwater
  '((t
@@ -69,6 +80,7 @@
         (mode-line-buffer-id (if active 'mode-line-buffer-id 'mode-line-buffer-id-inactive))
         (mode-line (if active 'mode-line 'mode-line-inactive))
         (face0 (if active 'ieremii-aoi 'powerline-inactive2))
+        (face0var (if active 'ieremii-aoi-variant 'powerline-inactive2))
         (face1 (if active 'ieremii-clean-pondwater 'powerline-inactive2))
         (face2 (if active 'ieremii-beach-storm 'powerline-inactive2))
         (face3 (if active 'ieremii-giant-goldfish 'powerline-inactive2))
@@ -85,11 +97,11 @@
            (cdr powerline-default-separator-dir))))
         (lhs
          (list
+          (when powerline-display-mule-info
+           (powerline-raw mode-line-mule-info face0var 'l))
           (powerline-raw "%*" face0 'l)
           (when powerline-display-buffer-size
            (powerline-buffer-size face0 'l))
-          (when powerline-display-mule-info
-           (powerline-raw mode-line-mule-info face0 'l))
           (powerline-raw "%f" face0)
           ;;          (powerline-buffer-id mode-line-buffer-id 'l)
           (when (and (boundp 'which-func-mode) which-func-mode)
@@ -119,7 +131,7 @@
           (powerline-raw " " face4)
           (powerline-raw "%6p" face4 'r)
           (when powerline-display-hud
-           (powerline-hud face3 face2 2)))))
+           (powerline-hud face3 face2 1)))))
        (concat
         (powerline-render lhs)
         (powerline-fill face2 (powerline-width rhs))

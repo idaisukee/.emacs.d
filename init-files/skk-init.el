@@ -19,7 +19,7 @@
  (save-buffer)
  (skk-kakutei))
 
-(setq kyu-cursor-hiragana-color "#FF5217")
+(setq kyu-cursor-hiragana-color "#f38630")
 
 (setq skk-cursor-hiragana-color kyu-cursor-hiragana-color)
 (setq skk-cursor-katakana-color "green3")
