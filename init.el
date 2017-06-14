@@ -11,7 +11,6 @@
 
 (setq files-to-require
  (list
-  'mode-line-init
   'misc-init
   'my-function-init
   'alias-init
@@ -28,6 +27,7 @@
   'dired-init
   'bind-key-init
   'yasnippet-init
+  'powerline-init
 ;;  'appearance-init
   ))
 (require 'appearance-init)

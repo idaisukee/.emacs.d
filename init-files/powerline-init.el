@@ -1,12 +1,3 @@
-(powerline-default-theme)
-
-(powerline-default-theme)
-(powerline-center-theme)
-(powerline-center-evil-theme)
-(powerline-vim-theme)
-(powerline-nano-theme)
-
-
 (defun powerline-ieremii-theme ()
   "Setup the default mode-line."
   (interactive)
@@ -73,3 +64,5 @@
         (powerline-fill face2 (powerline-width rhs))
         (powerline-render rhs)))))))
 (powerline-ieremii-theme)
+
+(provide 'powerline-init)
