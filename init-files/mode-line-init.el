@@ -1,5 +1,3 @@
-
-
 (defvar mode-line-cleaner-alist
   `( ;; For minor-mode, first char is 'space'
     (yas-minor-mode . ,(propertize " ●" 'face '(((:bold t :foreground "yellow")))))
