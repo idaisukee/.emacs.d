@@ -84,6 +84,8 @@
           (powerline-raw "%*" face0 'l)
           (when powerline-display-buffer-size
            (powerline-buffer-size face0 'l))
+          (powerline-raw " " face0)
+          (powerline-raw " " face1)
           (powerline-raw "%f" face0)
           ;;          (powerline-buffer-id mode-line-buffer-id 'l)
           (when (and (boundp 'which-func-mode) which-func-mode)
@@ -93,6 +95,7 @@
           (when (and (boundp 'erc-track-minor-mode) erc-track-minor-mode)
            (powerline-raw erc-modified-channels-object face0 'l))
           (powerline-major-mode face0 'l)
+          (powerline-raw " " face0)
           (powerline-process face0)
           (powerline-narrow face0 'l)
           (powerline-raw " " face1)
