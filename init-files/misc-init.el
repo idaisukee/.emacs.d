@@ -7,7 +7,6 @@
 (setq linum-format "%5d")
 (savehist-mode 1)
 (show-paren-mode 1)
-;;;(display-time)
 (line-number-mode -1)
 (column-number-mode -1)
 (transient-mark-mode 1)
@@ -26,14 +25,8 @@
 (setq shift-select-mode nil)
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
-;;;(setq default-tab-width 2)
 
 (setq-default show-trailing-whitespace nil) ; 行末の空白をハイライトするか
-;; (add-hook 'font-lock-mode-hook            ; タブをハイライト
-;;           (lambda ()
-;;             (font-lock-add-keywords
-;;              nil
-;;              '(("\t" 0 'trailing-whitespace prepend)))))
 
 ;;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
