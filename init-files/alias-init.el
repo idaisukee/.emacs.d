@@ -1,6 +1,3 @@
-(defun set-alias (pair)
- (defalias (car pair) (cdr pair)))
-
 (setq alias-pairs
  (list
   '(ao . anything-occur)
@@ -44,5 +41,5 @@
   '(yee . YaTeX-end-environment)
 ))
 
-(mapcar 'set-alias alias-pairs)
+(-map  (lambda (pair) (defalias (car pair) (cdr pair))) alias-pairs)
 (provide 'alias-init)
