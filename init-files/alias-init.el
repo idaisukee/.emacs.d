@@ -40,6 +40,7 @@
   '(st . backward-up-list)
   '(sh . down-list)
   '(noma . ieremii-insert-noma)
+  '(kuro . ieremii-insert-nakakuro)
   '(yee . YaTeX-end-environment)
 ))
 

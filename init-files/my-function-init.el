@@ -313,4 +313,8 @@ article:
  (interactive)
  (insert "々"))
 
+(defun ieremii-insert-nakakuro nil
+ (interactive)
+ (insert "・"))
+
 (provide 'my-function-init)
