@@ -42,10 +42,10 @@
  '(font-lock-comment-delimiter-face
    ((t (
         :inherit font-lock-comment-face
-        :foreground "#D0D102"))))
+        :foreground "#C02942")))) ; from http://www.colourlovers.com/palette/694737/Thought_Provoking
  '(font-lock-comment-face
    ((t (
-        :foreground "#01A4A4"
+        :foreground "#53777A" ; from http://www.colourlovers.com/palette/694737/Thought_Provoking
         :slant normal))))
  '(font-lock-constant-face
    ((t (
