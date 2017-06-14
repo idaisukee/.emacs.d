@@ -37,7 +37,8 @@
            (powerline-buffer-size mode-line 'l))
           (when powerline-display-mule-info
            (powerline-raw mode-line-mule-info mode-line 'l))
-          (powerline-buffer-id mode-line-buffer-id 'l)
+          (powerline-raw "%f" face2)
+          ;;          (powerline-buffer-id mode-line-buffer-id 'l)
           (when (and (boundp 'which-func-mode) which-func-mode)
            (powerline-raw which-func-format nil 'l))
           (powerline-raw " ")
