@@ -31,5 +31,6 @@
   'smart-compile-init
   'auto-mode-init
   'css-mode-init
+  'kensoukahuuntoutiyau
   ))
 (-map 'require files-to-require)
