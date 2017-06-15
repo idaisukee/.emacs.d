@@ -30,5 +30,6 @@
   'powerline-init
   'smart-compile-init
   'auto-mode-init
+  'css-mode-init
   ))
 (-map 'require files-to-require)
