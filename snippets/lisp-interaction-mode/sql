@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: button
+# key: sql
+# --
+button("$1")$0
