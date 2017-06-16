@@ -58,3 +58,7 @@
 
 (require 'generic-x)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+(require 'server)
+(unless (server-running-p)
+  (server-start))
