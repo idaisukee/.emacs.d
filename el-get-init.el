@@ -42,6 +42,7 @@
 (el-get-bundle! ht)
 (el-get-bundle! powerline)
 
+(el-get-bundle! sudo-ext)
 (if
  (or
   (string= emacs-version "24.5.1")
