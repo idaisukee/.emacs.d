@@ -32,5 +32,6 @@
   'auto-mode-init
   'css-mode-init
   'kensoukahuuntoutiyau
+  'git-gutter-init
   ))
 (-map 'require files-to-require)
