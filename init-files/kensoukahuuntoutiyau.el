@@ -59,6 +59,14 @@
     (write-file (s-concat ksu-dir "/" it) t))
    (list shell stdout stderr))))
 
+(defun ksu-save-current ()
+ (interactive)
+ (let*
+  (
+   (time (--> (current-buffer) (buffer-name it) (s-replace ".shell" "" it))))
+  (ksu-save time)))
+
+   
 ;;(ksu-set-window "aa")
 
 (defun ksu ()
