@@ -10,6 +10,13 @@
   (switch-to-buffer shell)
   (delete-other-windows)))
 
+(defun ksu-rename (time)
+ (interactive)
+ (let*
+  (
+   (time (s-replace "." "d" (hiyositiyau-now6)))
+   (shell (s-concat time ".shell")))
+  (rename-buffer shell)))
 
 (defun ksu-exec (time)
  (interactive)
