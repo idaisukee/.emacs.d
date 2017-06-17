@@ -30,6 +30,7 @@
  (interactive)
  (let*
   (
+   (shell (s-concat time ".shell"))
    (stdout (s-concat time ".stdout"))
    (stderr (s-concat time ".stderr")))
   (delete-other-windows)
