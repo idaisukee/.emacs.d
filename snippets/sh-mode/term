@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: term
-# key: tx
+# key: ter
 # --
 TERM=xterm
