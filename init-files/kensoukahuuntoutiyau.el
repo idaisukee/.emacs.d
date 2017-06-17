@@ -1,3 +1,5 @@
+(defvar ksu-dir "/tmp")
+
 (defun ksu-init nil
  (interactive)
  (let*
