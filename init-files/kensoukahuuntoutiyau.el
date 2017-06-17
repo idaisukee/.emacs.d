@@ -42,7 +42,10 @@
   (other-window 1)
   (switch-to-buffer stderr)
   (display-ansi-colors)
-  (other-window 1)))
+  (other-window 1)
+  (switch-to-buffer shell)
+  ))
+
 
 ;;(ksu-set-window "aa")
 
