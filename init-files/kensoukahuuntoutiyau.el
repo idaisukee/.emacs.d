@@ -2,7 +2,7 @@
  (interactive)
  (let*
   (
-   (time (format-time-string "%s" (current-time)))
+   (time (s-replace "." "d" (hiyositiyau-now6)))
    (shell (s-concat time ".shell")))
   (generate-new-buffer shell)
   (switch-to-buffer shell)
