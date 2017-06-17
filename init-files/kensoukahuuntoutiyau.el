@@ -78,6 +78,12 @@
   (ksu-exec time)
   (ksu-set-window time)))
 
+(defun ksu-new (old-time)
+ (interactive)
+ (let*
+  (
+   (ksu-save time))))
+
 (require 'ansi-color)
 
 ;; from https://stackoverflow.com/questions/23378271/how-do-i-display-ansi-color-codes-in-emacs-for-any-mode
