@@ -9,14 +9,13 @@
   (delete-other-windows)))
 
 
-(defun ksu-shell-command nil
+(defun ksu-exec (time)
  (interactive)
  (let*
   (
-   (time (format-time-string "%s" (current-time)))
    (stdout (s-concat time ".stdout"))
    (stderr (s-concat time ".stderr")))
-  (shell-command (region-to-string (point-min) (point-max)) stdout stderr)
+  (async-shell-command (region-to-string (point-min) (point-max)) stdout stderr)))
   (switch-to-buffer stdout)
   (display-ansi-colors)
   ))
