@@ -146,5 +146,10 @@
    (bind-keys :map isearch-mode-map
     ("C-S-s" . isearch-repeat-backward))))
 
+(add-hook 'sh-mode-hook
+ '(lambda ()
+   (bind-keys :map sh-mode-map
+    ("M-h" . ksu))))
+
 
 (provide 'bind-key-init)
