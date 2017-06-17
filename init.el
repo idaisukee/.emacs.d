@@ -33,5 +33,6 @@
   'css-mode-init
   'kensoukahuuntoutiyau
   'git-gutter-init
+  'hiyositiyau
   ))
 (-map 'require files-to-require)
