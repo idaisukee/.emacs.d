@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ssh
+# key: ssh
+# --
+ssh -Ap $1 '
+	$2
+'

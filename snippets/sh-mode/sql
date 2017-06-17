@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sql
+# key: sql
+# --
+echo '
+$1
+' | mysql -u $2 $3
