@@ -16,6 +16,7 @@
    (stdout (s-concat time ".stdout"))
    (stderr (s-concat time ".stderr")))
   (async-shell-command (region-to-string (point-min) (point-max)) stdout stderr)))
+
 (defun ksu-set-window (time)
  (interactive)
  (let*
@@ -32,6 +33,8 @@
   (switch-to-buffer stderr)
   (display-ansi-colors)
   (other-window 1)))
+
+;;(ksu-set-window "aa")
 
 (defun ksu ()
  (interactive)
