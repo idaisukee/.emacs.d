@@ -46,6 +46,18 @@
   (switch-to-buffer shell)
   ))
 
+(defun ksu-save (time)
+ (interactive)
+ (let*
+  (
+   (shell (s-concat time ".shell"))
+   (stdout (s-concat time ".stdout"))
+   (stderr (s-concat time ".stderr")))
+  (--map
+   (progn
+    (switch-to-buffer it)
+    (write-file (s-concat ksu-dir "/" it) t))
+   (list shell stdout stderr))))
 
 ;;(ksu-set-window "aa")
 
