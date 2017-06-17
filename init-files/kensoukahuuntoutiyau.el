@@ -33,6 +33,14 @@
   (display-ansi-colors)
   (other-window 1)))
 
+(defun ksu ()
+ (interactive)
+ (let*
+  (
+   (time (s-replace "." "d" (hiyositiyau-now6))))
+  (ksu-exec time)
+  (ksu-set-window time)))
+
 (require 'ansi-color)
 
 ;; from https://stackoverflow.com/questions/23378271/how-do-i-display-ansi-color-codes-in-emacs-for-any-mode
