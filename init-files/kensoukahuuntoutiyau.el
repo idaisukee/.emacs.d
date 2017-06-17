@@ -74,6 +74,7 @@
  (let*
   (
    (time (s-replace "." "d" (hiyositiyau-now6))))
+  (ksu-rename time)
   (ksu-exec time)
   (ksu-set-window time)))
 
