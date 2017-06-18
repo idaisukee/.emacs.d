@@ -1,5 +1,19 @@
 (defvar ksu-dir "/tmp")
 
+(defun ksu ()
+ (interactive)
+ (let*
+  (
+   (time (s-replace "." "d" (hiyositiyau-now6))))
+  (delete-other-windows)
+  (save-buffer)
+  (ksu-rename time)
+  (ksu-save-shell time)
+  (ksu-exec time)
+  (ksu-set-window time)))
+
+
+
 (defun ksu-init nil
  (interactive)
  (let*
@@ -84,18 +98,6 @@
 
    
 ;;(ksu-set-window "aa")
-
-(defun ksu ()
- (interactive)
- (let*
-  (
-   (time (s-replace "." "d" (hiyositiyau-now6))))
-  (delete-other-windows)
-  (save-buffer)
-  (ksu-rename time)
-  (ksu-save-shell time)
-  (ksu-exec time)
-  (ksu-set-window time)))
 
 (defun ksu-new ()
  (interactive)
