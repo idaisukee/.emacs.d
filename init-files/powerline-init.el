@@ -86,7 +86,7 @@
            (powerline-buffer-size face0 'l))
           (powerline-raw " " face0)
           (powerline-raw " " face1)
-          (powerline-raw "%f" face0)
+          (powerline-raw "%f %b" face0)
           ;;          (powerline-buffer-id mode-line-buffer-id 'l)
           (when (and (boundp 'which-func-mode) which-func-mode)
            (powerline-raw which-func-format nil 'l))
