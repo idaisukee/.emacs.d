@@ -34,14 +34,18 @@
    (stdout (s-concat time ".stdout"))
    (stderr (s-concat time ".stderr")))
   (delete-other-windows)
+
   (split-window-horizontally 40)
+
   (other-window 1)
   (switch-to-buffer stdout)
   (display-ansi-colors)
+
   (split-window-vertically 48)
   (other-window 1)
   (switch-to-buffer stderr)
   (display-ansi-colors)
+
   (other-window 1)
   (switch-to-buffer shell)
   ))
