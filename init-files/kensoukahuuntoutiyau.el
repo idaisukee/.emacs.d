@@ -20,6 +20,17 @@
    (shell (s-concat time ".shell")))
   (rename-buffer shell)))
 
+(defun ksu-save-shell (time)
+ (interactive)
+ (let*
+  (
+   (shell (s-concat time ".shell")))
+  (--map
+   (progn
+    (switch-to-buffer it)
+    (write-file (s-concat ksu-dir "/" it) t))
+   (list shell))))
+
 (defun ksu-exec (time)
  (interactive)
  (let*
@@ -65,17 +76,6 @@
     (write-file (s-concat ksu-dir "/" it) t))
    (list stdout stderr))
   (switch-to-buffer shell)))
-
-(defun ksu-save-shell (time)
- (interactive)
- (let*
-  (
-   (shell (s-concat time ".shell")))
-  (--map
-   (progn
-    (switch-to-buffer it)
-    (write-file (s-concat ksu-dir "/" it) t))
-   (list shell))))
 
 (defun ksu-save-current ()
  (interactive)
