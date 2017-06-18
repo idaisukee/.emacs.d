@@ -8,17 +8,24 @@
   (delete-other-windows)
   (save-buffer)
   (ksu-rename time)
-  (ksu-save-shell time)
+;;  (ksu-save-shell time)
   (ksu-exec time)
-  (ksu-set-window time)))
+  (ksu-set-window time)
+  (ksu-save-shell time)))
 
+(defun ksu-current-time ()
+ (interactive)
+ (let*
+  (
+   (time (s-replace "." "d" (hiyositiyau-now6))))
+  time))
+ 
 (defun ksu-rename (time)
  (interactive)
  (let*
   (
-   (time (s-replace "." "d" (hiyositiyau-now6)))
-   (shell (s-concat time ".shell")))
-  (rename-buffer shell)))
+   (shell (s-concat time ".shell"))
+  (rename-buffer shell))))
 
 (defun ksu-save-shell (time)
  (interactive)
@@ -28,7 +35,8 @@
   (--map
    (progn
     (switch-to-buffer it)
-    (write-file (s-concat ksu-dir "/" it) t))
+    ;;    (write-file (s-concat ksu-dir "/" it) t))
+    )
    (list shell))))
 
 (defun ksu-exec (time)
