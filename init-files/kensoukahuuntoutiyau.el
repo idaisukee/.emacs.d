@@ -79,11 +79,23 @@
   (ksu-exec time)
   (ksu-set-window time)))
 
-(defun ksu-new (old-time)
+(defun ksu-new ()
  (interactive)
  (let*
   (
-   (ksu-save time))))
+   (time (s-replace "." "d" (hiyositiyau-now6)))
+   (shell (s-concat time ".shell")))
+  (if
+   (s-equals?
+    (--> (current-buffer) (buffer-name it) (s-right 6 it))
+    ".shell")
+   (ksu-save-current))
+  (generate-new-buffer shell)
+  (switch-to-buffer shell)
+  (write-file shell)
+  (sh-mode)
+  (delete-other-windows)))
+  
 
 (require 'ansi-color)
 
