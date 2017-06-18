@@ -86,7 +86,10 @@
  (let*
   (
    (time (s-replace "." "d" (hiyositiyau-now6))))
+  (delete-other-windows)
+  (save-buffer)
   (ksu-rename time)
+  (ksu-save-shell time)
   (ksu-exec time)
   (ksu-set-window time)))
 
