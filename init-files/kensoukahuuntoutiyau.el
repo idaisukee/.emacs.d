@@ -12,18 +12,6 @@
   (ksu-exec time)
   (ksu-set-window time)))
 
-
-
-(defun ksu-init nil
- (interactive)
- (let*
-  (
-   (time (s-replace "." "d" (hiyositiyau-now6)))
-   (shell (s-concat time ".shell")))
-  (generate-new-buffer shell)
-  (switch-to-buffer shell)
-  (delete-other-windows)))
-
 (defun ksu-rename (time)
  (interactive)
  (let*
