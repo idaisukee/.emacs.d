@@ -272,13 +272,13 @@ article:
 
 (defun ieremii-open-junk-file nil
  (interactive)
- (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_branchname.rb"))
+ (setq ieremii-prd-now (s-concat (getenv "SRC") "/rdatetime/rc_ajd_now_6_deg.rb"))
  (if
   (file-exists-p ieremii-prd-now)
   (progn
    (find-file (getenv "HOME"))
    (setq ieremii-prd-now-command (s-concat "ruby " ieremii-prd-now))
-   (setq ieremii-junk-file-name (shell-command-to-string ieremii-prd-now-command))
+   (setq ieremii-junk-file-name (s-replace "." "d" (shell-command-to-string ieremii-prd-now-command)))
    (custom-set-variables
     '(open-junk-file-format (s-concat (getenv "SRC") "/priv/junk/" ieremii-junk-file-name ".") t))
    (open-junk-file))))
