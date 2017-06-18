@@ -57,7 +57,8 @@
    (progn
     (switch-to-buffer it)
     (write-file (s-concat ksu-dir "/" it) t))
-   (list shell stdout stderr))))
+   (list stdout stderr))
+  (switch-to-buffer shell)))
 
 (defun ksu-save-current ()
  (interactive)
