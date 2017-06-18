@@ -149,7 +149,8 @@
 (add-hook 'sh-mode-hook
  '(lambda ()
    (bind-keys :map sh-mode-map
-    ("M-h" . ksu))))
+    ("M-h" . ksu)
+    ("M-H" . ksu-save-current))))
 
 
 (provide 'bind-key-init)
