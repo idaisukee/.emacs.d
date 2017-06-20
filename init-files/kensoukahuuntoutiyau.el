@@ -17,8 +17,7 @@
  (interactive)
  (let*
   (
-   (time (format-time-string "%s" (current-time))))
-;;   (time (s-replace "." "d" (hiyositiyau-now6))))
+   (time (s-replace "." "d" (hiyositiyau-now6))))
   time))
  
 (defun ksu-rename (time)
