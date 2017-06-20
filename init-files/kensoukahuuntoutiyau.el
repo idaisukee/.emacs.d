@@ -4,28 +4,29 @@
  (interactive)
  (let*
   (
-   (time (s-replace "." "d" (hiyositiyau-now6))))
+   (time (ksu-current-time)))
   (delete-other-windows)
   (save-buffer)
   (ksu-rename time)
 ;;  (ksu-save-shell time)
   (ksu-exec time)
-  (ksu-set-window time)
-  (ksu-save-shell time)))
+  (ksu-set-window time)))
+;;  (ksu-save-shell time)))
 
 (defun ksu-current-time ()
  (interactive)
  (let*
   (
-   (time (s-replace "." "d" (hiyositiyau-now6))))
+   (time (format-time-string "%s" (current-time))))
+;;   (time (s-replace "." "d" (hiyositiyau-now6))))
   time))
  
 (defun ksu-rename (time)
  (interactive)
  (let*
   (
-   (shell (s-concat time ".shell"))
-  (rename-buffer shell))))
+   (shell (s-concat time ".shell")))
+  (rename-buffer shell)))
 
 (defun ksu-save-shell (time)
  (interactive)
