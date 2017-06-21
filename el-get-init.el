@@ -41,7 +41,6 @@
 (el-get-bundle! use-package)
 (el-get-bundle! ht)
 (el-get-bundle! powerline)
-(el-get-bundle! sudo-ext)
 (el-get-bundle ace-jump-mode)
 
 (if
