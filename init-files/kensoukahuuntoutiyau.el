@@ -8,7 +8,7 @@
   (delete-other-windows)
   (save-buffer)
   (ksu-rename time)
-;;  (ksu-save-shell time)
+  (ksu-save-shell time)
   (ksu-exec time)
   (ksu-set-window time)))
 ;;  (ksu-save-shell time)))
@@ -35,8 +35,7 @@
   (--map
    (progn
     (switch-to-buffer it)
-    ;;    (write-file (s-concat ksu-dir "/" it) t))
-    )
+    (write-file (s-concat ksu-dir "/" it) t))
    (list shell))))
 
 (defun ksu-exec (time)
