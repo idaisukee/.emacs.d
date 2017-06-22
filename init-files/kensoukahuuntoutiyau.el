@@ -1,4 +1,4 @@
-(defvar ksu-dir "/tmp")
+(defvar ksu-dir (s-concat (getenv "SRC") "/" "priv/ksu"))
 
 (defun ksu ()
     (interactive)
