@@ -309,6 +309,13 @@ article:
         (forward-char)
         (lgrep (region-to-string (region-beginning) (region-end)) "/home/ieremius/prd/doc/pub/sauketu/all/0.dat")))
 
+(defun ieremii-prepare-grep nil
+    (interactive)
+    (generate-new-buffer "ieremii-prepare-grep")
+    (switch-to-buffer "ieremii-prepare-grep")
+    (insert "(grep \"\")")
+    (eval-buffer))
+
 (defun ieremii-insert-noma nil
  (interactive)
  (insert "々"))

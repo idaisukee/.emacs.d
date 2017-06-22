@@ -36,3 +36,4 @@
         'hiyositiyau
         ))
 (-map 'require files-to-require)
+(ieremii-prepare-grep)
