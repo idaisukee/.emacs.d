@@ -302,12 +302,12 @@ article:
  (forward-char))
 
 (defun ieremii-lookup-sauketu nil
- (interactive)
- (save-excursion
-  (backward-char)
-  (set-mark-command nil)
-  (forward-char)
-  (lgrep (region-to-string (region-beginning) (region-end)) "/home/ieremius/prd/doc/pub/sauketu/all/0.dat")))
+    (interactive)
+    (save-excursion
+        (backward-char)
+        (set-mark-command nil)
+        (forward-char)
+        (lgrep (region-to-string (region-beginning) (region-end)) "/home/ieremius/prd/doc/pub/sauketu/all/0.dat")))
 
 (defun ieremii-insert-noma nil
  (interactive)
