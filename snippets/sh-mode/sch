@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sch
+# key: sch
+# --
+apt-cache search

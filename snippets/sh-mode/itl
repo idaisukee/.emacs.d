@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: itl
+# key: itl
+# --
+sudo apt-get install $1
+
