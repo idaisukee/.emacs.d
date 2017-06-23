@@ -156,7 +156,12 @@
    ((t (
        :inherit nil
        :underline t
-        :background "#af3320"))))
+       :background "#af3320"))))
+    '(comint-highlight-prompt
+         ((t (
+                 :background "black"
+                 :foreground "#C02942"
+                 :weight bold))))
 )
   
 
