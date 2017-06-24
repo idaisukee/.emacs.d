@@ -17,7 +17,7 @@
 (el-get-bundle! fxbois/web-mode)
 (el-get-bundle! lua-mode)
 (el-get-bundle multi-term)
-(el-get-bundle! sequential-command)
+(el-get-bundle! Hkey/sequential-command)
 (el-get-bundle! minor-mode-hack)
 (el-get-bundle migemo)
 (el-get-bundle! open-junk-file)
