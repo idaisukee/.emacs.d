@@ -59,7 +59,7 @@
  ("C-r" . delete-char)
  ("C-t" . previous-line)
  ("C-u" . end-of-line)
- ("C-v" . ieremii-replace-char)
+ ("C-v" . Yunoki-next-char)
  ("C-w" . my-search-forward)
  ("C-x C-h" . skk-mode)
  ("C-x j" . ieremii-open-junk-file)

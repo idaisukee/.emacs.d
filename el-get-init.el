@@ -42,6 +42,7 @@
 (el-get-bundle! ht)
 (el-get-bundle! powerline)
 (el-get-bundle ace-jump-mode)
+(el-get-bundle! idaisukee/Yunoki)
 
 (if
  (or
