@@ -35,6 +35,7 @@
 (el-get-bundle! eldoc-extension)
 (el-get-bundle visual-regexp)
 (el-get-bundle anything)
+(el-get-bundle helm)
 (el-get-bundle! dired-k)
 (el-get-bundle! yatex)
 (el-get-bundle! yasnippet)
