@@ -101,7 +101,8 @@
     (let*
         (
             (time (s-replace "." "d" (hiyositiyau-now6)))
-            (shell (s-concat time ".shell")))
+            (shell (s-concat time ".shell"))
+            (shell-full (s-concat ksu-dir "/" shell)))
         (if
             (s-equals?
                 (--> (current-buffer) (buffer-name it) (s-right 6 it))
@@ -109,7 +110,7 @@
             (ksu-save-current))
         (generate-new-buffer shell)
         (switch-to-buffer shell)
-        (write-file shell)
+        (write-file shell-full)
         (sh-mode)
         (delete-other-windows)))
 
