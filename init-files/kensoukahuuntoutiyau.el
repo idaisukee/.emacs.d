@@ -52,7 +52,9 @@
         (
             (shell (s-concat time ".shell"))
             (stdout (s-concat time ".stdout"))
-            (stderr (s-concat time ".stderr")))
+            (stderr (s-concat time ".stderr"))
+            (stderr-height 4)
+            (stdout-height (- (frame-height) stderr-height)))
         (delete-other-windows)
 
         (split-window-horizontally 40)
@@ -61,7 +63,7 @@
         (switch-to-buffer stdout)
         (display-ansi-colors)
 
-        (split-window-vertically 48)
+        (split-window-vertically stdout-height)
         (other-window 1)
         (switch-to-buffer stderr)
         (display-ansi-colors)
