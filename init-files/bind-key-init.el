@@ -126,6 +126,19 @@
     ("C-b" . delete-backward-char)
     ("C-p" . yank))
 
+(bind-keys :map helm-map
+    ("C-a" . beginning-of-line)
+    ("C-u" . end-of-line)
+    ("C-d" . backward-char)
+    ("M-h" . helm-next-line)
+    ("M-t" . helm-previous-line)
+    ("C-n" . forward-char)
+    ("C-o" . helm-next-page)
+    ("C-e" . helm-previous-page)
+    ("C-r" . delete-char)
+    ("C-b" . delete-backward-char)
+    ("C-p" . yank))
+
 (bind-keys :map minibuffer-local-map
     ("M-t" . previous-history-element)
     ("M-h" . next-history-element))
