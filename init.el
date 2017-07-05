@@ -31,7 +31,6 @@
         'smart-compile-init
         'auto-mode-init
         'css-mode-init
-        'kensoukahuuntoutiyau
         'git-gutter-init
         'hiyositiyau
         ))

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: N
+# key: N
+# --
+sudo service network-manager restart

@@ -45,6 +45,7 @@
 (el-get-bundle ace-jump-mode)
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
+(el-get-bundle! idaisukee/Kensoukahuuntoutiyau)
 
 (if
  (or
