@@ -37,7 +37,7 @@
     ("C-S-k" . ieremii-kill-line-contents)
     ("C-S-n" . exit-white-space-or-forward-word)
     ("C-S-o" . end-of-buffer)
-    ("C-S-p" . anything-show-kill-ring)
+    ("C-S-p" . helm-show-kill-ring)
     ("C-S-r" . ieremii-kill-word)
     ("C-S-s" . isearch-backward)
     ("C-S-t" . backward-paragraph)
@@ -83,6 +83,7 @@
     ("M-u" . comment-dwim)
     ("M-v" . evil-mode)
     ("M-D" . dired-pwd)
+    ("M-O" . helm-for-files)
     ("S-<muhenkan>" . delete-window)
     )
 
