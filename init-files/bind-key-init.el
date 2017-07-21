@@ -82,6 +82,7 @@
     ("M-s" . save-buffer)
     ("M-u" . comment-dwim)
     ("M-v" . evil-mode)
+    ("M-w" . kill-buffer)
     ("M-D" . dired-pwd)
     ("M-O" . helm-for-files)
     ("S-<muhenkan>" . delete-window)
