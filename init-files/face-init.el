@@ -162,6 +162,13 @@
                  :background "black"
                  :foreground "#C02942"
                  :weight bold))))
+    '(info-title-3
+         ((t
+              (
+                  :inherit default
+                  :family "Inconsolata"
+                  :height 1.0
+                  :weight normal))))
 )
   
 
