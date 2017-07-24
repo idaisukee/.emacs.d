@@ -33,6 +33,7 @@
         'css-mode-init
         'git-gutter-init
         'hiyositiyau
+        'auto-complete-init
         ))
 (-map 'require files-to-require)
 (ieremii-prepare-grep)
