@@ -86,6 +86,7 @@
     ("M-D" . dired-pwd)
     ("M-N" . ksu-new)
     ("M-O" . helm-for-files)
+    ("M-<SPC>" . git-complete)
     ("S-<muhenkan>" . delete-window)
     )
 
