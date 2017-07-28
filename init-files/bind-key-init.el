@@ -84,6 +84,7 @@
     ("M-v" . evil-mode)
     ("M-w" . kill-buffer)
     ("M-D" . dired-pwd)
+    ("M-N" . ksu-new)
     ("M-O" . helm-for-files)
     ("S-<muhenkan>" . delete-window)
     )
