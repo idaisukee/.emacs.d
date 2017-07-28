@@ -147,6 +147,9 @@
     ("M-t" . previous-history-element)
     ("M-h" . next-history-element))
 
+(bind-keys :map ac-completing-map
+    ("M-h" . ac-next)
+    ("M-t" . ac-previous))
 
 (add-hook 'markdown-mode-hook
     '(lambda ()
