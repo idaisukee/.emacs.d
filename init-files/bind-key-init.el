@@ -171,6 +171,7 @@
 (add-hook 'sh-mode-hook
     '(lambda ()
          (bind-keys :map sh-mode-map
+             ("C-i" . completion-at-point)
              ("M-f" . ksu-ins)
              ("M-h" . ksu)
              ("M-H" . ksu-save-current)
