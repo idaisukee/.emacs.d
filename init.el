@@ -34,6 +34,7 @@
         'git-gutter-init
         'hiyositiyau
         'auto-complete-init
+        'popwin-init
         ))
 (-map 'require files-to-require)
 (ieremii-prepare-grep)
