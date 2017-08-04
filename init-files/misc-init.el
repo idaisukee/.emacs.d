@@ -25,6 +25,7 @@
 (setq shift-select-mode nil)
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
+(winner-mode)
 
 (setq-default show-trailing-whitespace nil) ; 行末の空白をハイライトするか
 

@@ -72,6 +72,7 @@
     ("M-c" . smart-compile)
     ("M-d" . ksu-prev)
     ("M-e" . eval-last-sexp)
+    ("M-f" . winner-undo)
     ("M-g" . magit-status)
     ("M-j" . other-window)
     ("M-k" . delete-other-windows)
