@@ -46,6 +46,7 @@
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
 (el-get-bundle! idaisukee/Kensoukahuuntoutiyau)
+(el-get-bundle! idaisukee/Sakurahasi)
 (el-get-bundle auto-complete)
 (el-get-bundle! zk-phi/git-complete)
 (el-get-bundle abo-abo/swiper)
