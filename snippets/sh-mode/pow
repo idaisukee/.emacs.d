@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pow
+# key: pow
+# --
+upower -d | grep percentage | head -1 | awk 'END {print $2}'
