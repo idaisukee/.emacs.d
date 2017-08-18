@@ -54,7 +54,7 @@
 (el-get-bundle! helm-ag)
 (el-get-bundle! anzu)
 (el-get-bundle! helm-swoop)
-
+(el-get-bundle! ace-isearch)
 
 (if
  (or

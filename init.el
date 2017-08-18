@@ -36,6 +36,7 @@
         'auto-complete-init
         'popwin-init
         'anzu-init
+        'ace-isearch-init
         ))
 (-map 'require files-to-require)
 (ieremii-prepare-grep)
