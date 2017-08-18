@@ -35,6 +35,7 @@
         'hiyositiyau
         'auto-complete-init
         'popwin-init
+        'anzu-init
         ))
 (-map 'require files-to-require)
 (ieremii-prepare-grep)
