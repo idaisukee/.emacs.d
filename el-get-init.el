@@ -53,6 +53,8 @@
 (el-get-bundle m2ym/popwin-el)
 (el-get-bundle! helm-ag)
 (el-get-bundle! anzu)
+(el-get-bundle! helm-swoop)
+
 
 (if
  (or
