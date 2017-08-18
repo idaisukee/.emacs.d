@@ -51,6 +51,7 @@
 (el-get-bundle! zk-phi/git-complete)
 (el-get-bundle abo-abo/swiper)
 (el-get-bundle m2ym/popwin-el)
+(el-get-bundle! helm-ag)
 
 (if
  (or
