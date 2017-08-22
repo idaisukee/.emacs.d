@@ -85,7 +85,7 @@
     ("M-v" . evil-mode)
     ("M-w" . kill-buffer)
     ("M-D" . dired-pwd)
-    ("M-N" . ksu-new)
+    ("M-N" . ksu-new-dwim)
     ("M-O" . helm-for-files)
     ("M-<SPC>" . git-complete)
     ("S-<muhenkan>" . delete-window)
