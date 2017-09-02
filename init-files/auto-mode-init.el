@@ -8,8 +8,6 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.shell\\'" . sh-mode))
-(if (string= (s-trim (shell-command-to-string "uname -n")) "ieremius-VirtualBox")
-    (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
-    (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode)))
-    
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+
 (provide 'auto-mode-init)
