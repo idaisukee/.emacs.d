@@ -30,7 +30,7 @@
 (el-get-bundle howdoi)
 (el-get-bundle Wilfred/ez-query-replace.el)
 (el-get-bundle! expand-region)
-(el-get-bundle! gnugo)
+(el-get-bundle! emacsmirror/gnugo)
 (el-get-bundle! summarye)
 (el-get-bundle! eldoc-extension)
 (el-get-bundle visual-regexp)
