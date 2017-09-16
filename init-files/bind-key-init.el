@@ -26,6 +26,7 @@
     ("C-<f6>" . eshell)
     ("C-<f8>" . show-lub)
     ("C-=" . goto-line)
+    ("C-+" . ace-jump-line-mode)
     ("C-@" . undo)
     ("C-S-SPC" . ieremii-return-to-mark)
     ("C-S-a" . move-to-open-paren)
