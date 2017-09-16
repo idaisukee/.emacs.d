@@ -56,6 +56,11 @@
 (el-get-bundle! anzu)
 (el-get-bundle! helm-swoop)
 (el-get-bundle! ace-isearch)
+(el-get-bundle m2ym/direx-el)
+(el-get-bundle sr-speedbar)
+(el-get-bundle company-mode/company-mode)
+
+
 
 (if
  (or
