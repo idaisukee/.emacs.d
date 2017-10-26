@@ -317,4 +317,17 @@ article:
     (interactive)
     (shell-command (s-concat "rm " (locate-dominating-file (file-truename buffer-file-name) ".git") ".git/index.lock")))
 
+(defun ieremii-typeset nil
+    (interactive)
+    (when buffer-file-name
+        (let*
+            (
+                (file-name (-> buffer-file-name file-truename ))
+                (dir (-> file-name f-dirname))
+                (file (-> file-name f-filename f-no-ext))
+                (ext (-> file-name f-ext))
+                (command (s-concat "cd " dir "; " "uplatex " file "; " "dvipdfmx " file)))
+            (when (s-equals? ext "tex")
+                (shell-command command)))))
+
 (provide 'my-function-init)
