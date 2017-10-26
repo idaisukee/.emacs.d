@@ -179,5 +179,10 @@
              ("M-H" . ksu-save-current)
              ("M-N" . ksu-new))))
 
+(add-hook 'latex-mode-hook
+    '(lambda ()
+         (bind-keys :map latex-mode-map
+             ("M-h" . ieremii-typeset))))
+
 
 (provide 'bind-key-init)
