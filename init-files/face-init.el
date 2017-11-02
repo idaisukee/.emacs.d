@@ -115,7 +115,6 @@
         :background "#14b9d5"))))
  '(helm-selection
    ((t (
-        :background "#111111"
         :underline t
         :inverse-video t
         :distant-foreground "black"))))
