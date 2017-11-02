@@ -28,6 +28,7 @@
     ("C-=" . goto-line)
     ("C-+" . ace-jump-line-mode)
     ("C-@" . undo)
+    ("C-?" . undo-tree-visualize)
     ("C-S-SPC" . ieremii-return-to-mark)
     ("C-S-a" . move-to-open-paren)
     ("C-S-b" . ieremii-backward-kill-word)
