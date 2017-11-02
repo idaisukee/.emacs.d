@@ -69,7 +69,7 @@
    ((t (
         :inherit default
         :background "#a7dbd8"
-        :foreground "white"
+        :foreground "black"
         :box nil
         :weight normal))))
  '(mode-line-buffer-id
@@ -115,8 +115,27 @@
         :background "#14b9d5"))))
  '(helm-selection
    ((t (
-        :background "darkgray"
+        :background "#111111"
+        :underline t
+        :inverse-video t
         :distant-foreground "black"))))
+ '(helm-match
+   ((t (
+           :foreground "orange"))))
+ '(helm-ff-file
+      ((t (
+              :foreground "#a7dbd8"
+              ))))
+     '(helm-buffer-file
+          ((t (
+                  :inherit nil
+                  :foreground "#a7dbd8"
+        :distant-foreground "yellow"))))
+ '(helm-candidate-number
+   ((t (
+        :background "orange"
+        :foreground "white"))))
+
  '(helm-source-header
    ((t (
         :background "#22083397778B"
