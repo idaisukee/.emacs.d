@@ -74,8 +74,8 @@
                  :weight normal))))
     '(mode-line-buffer-id
          ((t (
-                 :background "white"
-                 :foreground "black"
+                 :background "#53777A"
+                 :foreground "white"
                  :weight normal))))
     '(mode-line-inactive
          ((t (
@@ -187,8 +187,9 @@
                   :family "Inconsolata"
                   :height 1.0
                   :weight normal))))
+    '(anything-candidate-number
+         ((t (
+                 :inherit helm-candidate-number))))
     )
-
-
 
 (provide 'face-init)
