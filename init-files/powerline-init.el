@@ -38,7 +38,8 @@
 (defface ieremii-giant-goldfish
  '((t
     (
-     :background "#f38630"
+        :background "#f38630"
+        :foreground "white"
      :inherit mode-line)))
   "ieremii face 0."
  :group 'powerline)
@@ -46,7 +47,8 @@
 (defface ieremii-unreal-food-pills
  '((t
     (
-     :background "#fa6900"
+        :background "#fa6900"
+        :foreground "white"
      :inherit mode-line)))
   "ieremii face 0."
  :group 'powerline)
