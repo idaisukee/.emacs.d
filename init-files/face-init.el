@@ -140,6 +140,10 @@
                  :background "#22083397778B"
                  :foreground "white"
                  :weight normal))))
+    '(helm-ff-prefix
+         ((t (
+                 :background "black"
+                 :foreground "white"))))
     '(woman-bold
          ((t (
                  :background "DodgerBlue1"))))
