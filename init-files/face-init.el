@@ -115,7 +115,7 @@
                  :background "#14b9d5"))))
     '(helm-selection
          ((t (
-                 :underline t
+                 :underline nil
                  :inverse-video t
                  :distant-foreground "black"))))
     '(helm-match
@@ -144,6 +144,10 @@
          ((t (
                  :background "black"
                  :foreground "white"))))
+    '(helm-separator
+         ((t (
+                 :background "black"
+                 :foreground "#a7dbd8"))))
     '(woman-bold
          ((t (
                  :background "DodgerBlue1"))))
