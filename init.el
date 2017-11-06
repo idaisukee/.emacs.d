@@ -8,7 +8,7 @@
 
 (require 'el-get-init)
 
-(setq files-to-require
+(-each
     (list
         'appearance-init
         'misc-init
@@ -37,6 +37,6 @@
         'popwin-init
         'anzu-init
         'ace-isearch-init
-        ))
-(-map 'require files-to-require)
+        )
+    'require)
 (ieremii-prepare-grep)
