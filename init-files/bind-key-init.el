@@ -2,6 +2,11 @@
     (interactive)
     (other-window -1))
 
+(defun ieremii-open-line ()
+    (interactive)
+    (beginning-of-line)
+    (open-line 1))
+
 (bind-keys*
     ("<backtab>" . save-buffer)
     ("<down>" . next-line)
@@ -37,6 +42,7 @@
     ("C-S-f" . goto-last-change-reverse)
     ("C-S-h" . forward-paragraph)
     ("C-S-k" . ieremii-kill-line-contents)
+    ("C-S-m" . ieremii-open-line)
     ("C-S-n" . exit-white-space-or-forward-word)
     ("C-S-o" . end-of-buffer)
     ("C-S-p" . helm-show-kill-ring)
@@ -87,6 +93,7 @@
     ("M-v" . evil-mode)
     ("M-w" . kill-buffer)
     ("M-D" . dired-pwd)
+    ("M-M" . helm-locate)
     ("M-N" . ksu-new-dwim)
     ("M-O" . helm-for-files)
     ("M-<SPC>" . git-complete)
