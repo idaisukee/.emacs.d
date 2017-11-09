@@ -21,8 +21,10 @@
                  :family "Inconsolata"))))
     '(button
          ((t (
-                 :background "white"
-                 :foreground "black"
+                 :background "grey3"
+                 :foreground "orange"
+                 :height 100
+                 :box "yellow"
                  :weight light))))
     '(comint-highlight-prompt
          ((t (
@@ -64,7 +66,7 @@
                  :foreground "DodgerBlue1"))))
     '(font-lock-builtin-face
          ((t (
-                 :foreground "#D95B43"))))
+                 :foreground "#C02942"))))
     '(mode-line
          ((t (
                  :inherit default
@@ -148,6 +150,14 @@
          ((t (
                  :background "black"
                  :foreground "#a7dbd8"))))
+    '(helm-buffer-process
+         ((t (
+                 :background "black"
+                 :foreground "#616161"))))
+    '(helm-helper
+         ((t (
+                 :background "white"
+                 :foreground "black"))))
     '(woman-bold
          ((t (
                  :background "DodgerBlue1"))))
@@ -171,6 +181,10 @@
                  :weight normal
                  :foreground "#ca5ba3"
                  :underline t))))
+    '(dired-header
+         ((t (
+                 :foreground "#ca5ba3"
+                 :background "black"))))
     '(dired-k-directory
          ((t (
                  :background "#991122"
