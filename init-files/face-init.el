@@ -158,6 +158,11 @@
          ((t (
                  :background "white"
                  :foreground "black"))))
+    '(helm-swoop-target-line-face
+         ((t (
+                 :inherit default
+                 :underline "yellow"
+                 :inverse-video t))))
     '(woman-bold
          ((t (
                  :background "DodgerBlue1"))))
