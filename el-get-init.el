@@ -55,12 +55,12 @@
 (el-get-bundle! helm-ag)
 (el-get-bundle! anzu)
 (el-get-bundle! helm-swoop)
-(el-get-bundle! ace-isearch)
 (el-get-bundle m2ym/direx-el)
 (el-get-bundle sr-speedbar)
 (el-get-bundle company-mode/company-mode)
 (el-get-bundle sabof/stripe-buffer)
-
+(el-get-bundle! abo-abo/avy)
+(el-get-bundle! momomo5717/avy-migemo)
 (if
  (or
   (string= emacs-version "24.5.1")

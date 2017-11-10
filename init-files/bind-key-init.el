@@ -47,7 +47,7 @@
     ("C-S-o" . end-of-buffer)
     ("C-S-p" . helm-show-kill-ring)
     ("C-S-r" . ieremii-kill-word)
-    ("C-S-s" . isearch-backward)
+    ("C-S-s" . avy-migemo-goto-char)
     ("C-S-t" . backward-paragraph)
     ("C-S-u" . move-to-close-paren)
     ("C-S-v" . ieremii-lookup-sauketu)

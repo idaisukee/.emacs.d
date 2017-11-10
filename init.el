@@ -10,6 +10,7 @@
 
 (-each
     (list
+        'color-init
         'appearance-init
         'misc-init
         'my-function-init
@@ -36,8 +37,8 @@
         'auto-complete-init
         'popwin-init
         'anzu-init
-        'ace-isearch-init
         'stripe-buffer-init
+        'avy-migemo-init
         )
     'require)
 (ieremii-prepare-grep)
