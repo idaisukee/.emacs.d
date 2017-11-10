@@ -37,6 +37,7 @@
         'popwin-init
         'anzu-init
         'ace-isearch-init
+        'stripe-buffer-init
         )
     'require)
 (ieremii-prepare-grep)
