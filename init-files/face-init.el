@@ -55,18 +55,27 @@
          ((t (
                  :foreground "#F18D05"
                  :height 1.0))))
-    '(font-lock-string-face
+    `(font-lock-string-face
          ((t (
-                 :foreground "#00A1CB"))))
+                 :foreground ,(ht-get ieremii-color "pfizer-blue")))))
     '(font-lock-type-face
          ((t (
                  :foreground "#9BF0E9"))))
-    '(font-lock-variable-name-face
+    `(font-lock-variable-name-face
          ((t (
-                 :foreground "DodgerBlue1"))))
+                 :foreground ,(ht-get ieremii-color "prevert")))))
     '(font-lock-builtin-face
          ((t (
                  :foreground "#C02942"))))
+    `(font-lock-doc-face
+         ((t (
+                 :foreground ,(ht-get ieremii-color "chestnut")))))
+    `(speedbar-file-face
+         ((t (
+                 :foreground ,(ht-get ieremii-color "grass")))))
+    `(speedbar-selected-face
+         ((t (
+                 :foreground ,(ht-get ieremii-color "prevert")))))
     '(mode-line
          ((t (
                  :inherit default
