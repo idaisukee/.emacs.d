@@ -19,12 +19,12 @@
                  :width normal
                  :foundry "unknown"
                  :family "Inconsolata"))))
-    '(button
+    `(button
          ((t (
-                 :background "grey3"
-                 :foreground "orange"
+                 :background "black"
+                 :foreground ,(ht-get ieremii-color "prevert")
                  :height 100
-                 :box "yellow"
+                 :underline ,(ht-get ieremii-color "ruby-red")
                  :weight light))))
     '(comint-highlight-prompt
          ((t (
@@ -35,9 +35,18 @@
          ((t (
                  :inherit default
                  :background "black"
-                 :foreground "yellow"
+                 :foreground "orange"
                  :slant normal
                  :weight normal
+                 :width normal))))
+    '(completions-first-difference
+         ((t (
+                 :inherit default
+                 :background "black"
+                 :foreground "white"
+                 :slant normal
+                 :weight normal
+                 :underline "orange"
                  :width normal))))
     '(font-lock-comment-delimiter-face
          ((t (
@@ -172,10 +181,10 @@
                  :inherit default
                  :underline "yellow"
                  :inverse-video t))))
-    '(woman-bold
+    `(woman-bold
          ((t (
-                 :background "DodgerBlue1"))))
-
+                 :inherit default
+                 :foreground ,(ht-get ieremii-color "grass")))))
     '(info-menu-header
          ((t (
                  :family "Inconsolata"))))
@@ -226,6 +235,15 @@
     '(anything-candidate-number
          ((t (
                  :inherit helm-candidate-number))))
+    `(web-mode-block-delimiter-face
+         ((t (
+                 :foreground ,(ht-get ieremii-color "gold")))))
+    `(web-mode-html-tag-face
+         ((t (
+                 :foreground ,(ht-get ieremii-color "dark-gray")))))
+    `(linum
+         ((t (
+                 :foreground ,(ht-get ieremii-color "gold")))))
     )
 
 (provide 'face-init)
