@@ -111,12 +111,30 @@
                  :inherit font-lock-comment-face
                  :background "black"
                  :foreground "white"))))
-    '(rainbow-delimiters-depth-1-face ((t (:foreground "#00ff00"))))
-    '(rainbow-delimiters-depth-2-face ((t (:foreground "#0000ff"))))
-    '(rainbow-delimiters-depth-3-face ((t (:foreground "#00ff00"))))
-    '(rainbow-delimiters-depth-4-face ((t (:foreground "#0000ff"))))
-    '(rainbow-delimiters-depth-5-face ((t (:foreground "#00ff00"))))
-    '(rainbow-delimiters-depth-6-face ((t (:foreground "#0000ff"))))
+    `(rainbow-delimiters-depth-1-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 1)
+                 :underline nil))))
+    `(rainbow-delimiters-depth-2-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.8)
+                 :underline nil))))
+    `(rainbow-delimiters-depth-3-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.7)
+                 :underline nil))))
+    `(rainbow-delimiters-depth-4-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.6)
+                 :underline nil))))
+    `(rainbow-delimiters-depth-5-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.5)
+                 :underline nil))))
+    `(rainbow-delimiters-depth-6-face
+         ((t (
+                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.4)
+                 :underline nil))))
     '(trailing-whitespace
          ((t (
                  :background "#222222"))))
