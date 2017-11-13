@@ -62,6 +62,8 @@
                  :weight bold))))
     '(font-lock-function-name-face
          ((t (
+                 :family "Fantasque Sans Mono"
+                 :slant italic
                  :foreground "#F18D05"
                  :height 1.0))))
     `(font-lock-string-face
