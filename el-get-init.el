@@ -43,11 +43,6 @@
 (el-get-bundle! ht)
 (el-get-bundle! powerline)
 (el-get-bundle ace-jump-mode)
-(el-get-bundle! idaisukee/Yunoki)
-(el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
-(el-get-bundle! idaisukee/Kensoukahuuntoutiyau)
-(el-get-bundle! idaisukee/Sakurahasi)
-(el-get-bundle! idaisukee/Iriewoka)
 (el-get-bundle auto-complete)
 (el-get-bundle! zk-phi/git-complete)
 (el-get-bundle abo-abo/swiper)
@@ -63,6 +58,16 @@
 (el-get-bundle! momomo5717/avy-migemo)
 (el-get-bundle apel)
 (el-get-bundle! elscreen)
+(el-get-bundle! emacsmirror/rainbow-mode)
+(el-get-bundle! Fanael/rainbow-delimiters)
+
+(el-get-bundle! idaisukee/Yunoki)
+(el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
+(el-get-bundle! idaisukee/Kensoukahuuntoutiyau)
+(el-get-bundle! idaisukee/Sakurahasi)
+(el-get-bundle! idaisukee/Iriewoka)
+(el-get-bundle! idaisukee/Sinsimitu)
+
 
 (if
  (or
