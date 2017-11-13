@@ -133,7 +133,7 @@
                  :underline nil))))
     `(rainbow-delimiters-depth-6-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.4)
+                 :foreground ,(Ssm-rgb-hex 0.7 0.3 0.9)
                  :underline nil))))
     '(trailing-whitespace
          ((t (
