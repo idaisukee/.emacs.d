@@ -103,6 +103,8 @@
                                  (powerline-raw " " face1)
                                  ;;          (funcall separator-left face1 face2)
                                  (powerline-vc face0 'r)
+                                 (powerline-raw " " face1)
+                                 (powerline-raw (format "%s " (get-char-property (point) 'face)) face0 'l)
                                  (when (bound-and-true-p nyan-mode)
                                      (powerline-raw (list (nyan-create)) face0 'l))))
                          (rhs
