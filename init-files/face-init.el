@@ -244,6 +244,10 @@
     `(linum
          ((t (
                  :foreground ,(ht-get ieremii-color "gold")))))
+    `(help-argument-name
+         ((t (
+                 :underline ,(ht-get ieremii-color "ruby-red")
+                 :foreground ,(ht-get ieremii-color "pacman-aqua")))))
     )
 
 (provide 'face-init)
