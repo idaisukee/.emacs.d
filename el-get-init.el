@@ -61,6 +61,9 @@
 (el-get-bundle sabof/stripe-buffer)
 (el-get-bundle! abo-abo/avy)
 (el-get-bundle! momomo5717/avy-migemo)
+(el-get-bundle apel)
+(el-get-bundle! elscreen)
+
 (if
  (or
   (string= emacs-version "24.5.1")
