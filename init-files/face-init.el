@@ -113,27 +113,27 @@
                  :foreground "white"))))
     `(rainbow-delimiters-depth-1-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 1)
+                 :foreground ,(Ssm-rgb-hex 0.1 0.65 0.7)
                  :underline nil))))
     `(rainbow-delimiters-depth-2-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.8)
+                 :foreground ,(Ssm-rgb-hex 0.2 0.65 0.7)
                  :underline nil))))
     `(rainbow-delimiters-depth-3-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.3 0.65 0.7)
                  :underline nil))))
     `(rainbow-delimiters-depth-4-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.6)
+                 :foreground ,(Ssm-rgb-hex 0.4 0.65 0.7)
                  :underline nil))))
     `(rainbow-delimiters-depth-5-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.5 0.5)
+                 :foreground ,(Ssm-rgb-hex 0.5 0.65 0.7)
                  :underline nil))))
     `(rainbow-delimiters-depth-6-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.7 0.3 0.9)
+                 :foreground ,(Ssm-rgb-hex 0.6 0.65 0.7)
                  :underline nil))))
     '(trailing-whitespace
          ((t (
