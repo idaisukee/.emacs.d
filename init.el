@@ -39,6 +39,7 @@
         'anzu-init
         'stripe-buffer-init
         'avy-migemo-init
+        'rainbow-delimiters-init
         )
     'require)
 (ieremii-prepare-grep)
