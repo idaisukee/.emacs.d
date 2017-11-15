@@ -67,7 +67,7 @@
 (el-get-bundle! idaisukee/Sakurahasi)
 (el-get-bundle! idaisukee/Iriewoka)
 (el-get-bundle! idaisukee/Sinsimitu)
-
+(el-get-bundle! idaisukee/Siyakusiyomahe)
 
 (if
  (or
