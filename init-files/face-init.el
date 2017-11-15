@@ -1,3 +1,8 @@
+(setq
+    ieremii-rainbow-s 0.4
+    ieremii-rainbow-v 0.85)
+
+
 (custom-set-faces
     ;; custom-set-faces was added by Custom.
     ;; If you edit it by hand, you could mess it up, so be careful.
@@ -60,6 +65,11 @@
          ((t (
                  :foreground "#D70060"
                  :weight bold))))
+    `(font-lock-keyword-face
+         ((t (
+                 :family "Fantasque Sans Mono"
+                 :foreground ,(Ssm-rgb-hex 0.9 0.8 0.8)
+                 :weight bold))))
     '(font-lock-function-name-face
          ((t (
                  :family "Fantasque Sans Mono"
@@ -113,27 +123,27 @@
                  :foreground "white"))))
     `(rainbow-delimiters-depth-1-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.1 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.9 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     `(rainbow-delimiters-depth-2-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.2 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.8 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     `(rainbow-delimiters-depth-3-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.3 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.7 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     `(rainbow-delimiters-depth-4-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.4 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.6 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     `(rainbow-delimiters-depth-5-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.5 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.5 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     `(rainbow-delimiters-depth-6-face
          ((t (
-                 :foreground ,(Ssm-rgb-hex 0.6 0.65 0.7)
+                 :foreground ,(Ssm-rgb-hex 0.4 ieremii-rainbow-s ieremii-rainbow-v)
                  :underline nil))))
     '(trailing-whitespace
          ((t (
