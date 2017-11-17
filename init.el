@@ -39,7 +39,11 @@
         'avy-migemo-init
         'rainbow-delimiters-init
         'theme-init
-        'powerline-init
+;;;        'powerline-init
         )
     'require)
+
+(require 'Akihamiti)
+(powerline-Akihamiti)
+
 (ieremii-prepare-grep)

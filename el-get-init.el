@@ -72,6 +72,8 @@
 (el-get-bundle! idaisukee/Simituekimahe)
 ;;;(el-get-bundle! idaisukee/Nakahamatiyau)
 (el-get-bundle! idaisukee/Tusimati)
+(el-get-bundle idaisukee/Akihamiti)
+
 
 (if
  (or
