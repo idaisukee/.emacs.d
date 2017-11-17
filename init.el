@@ -27,7 +27,6 @@
         'dired-init
         'bind-key-init
         'yasnippet-init
-        'powerline-init
         'smart-compile-init
         'auto-mode-init
         'css-mode-init
@@ -40,6 +39,7 @@
         'avy-migemo-init
         'rainbow-delimiters-init
         'theme-init
+        'powerline-init
         )
     'require)
 (ieremii-prepare-grep)
