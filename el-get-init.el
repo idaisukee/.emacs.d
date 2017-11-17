@@ -70,6 +70,8 @@
 (el-get-bundle! idaisukee/Sinsimitu)
 (el-get-bundle! idaisukee/Siyakusiyomahe)
 (el-get-bundle! idaisukee/Simituekimahe)
+;;;(el-get-bundle! idaisukee/Nakahamatiyau)
+(el-get-bundle! idaisukee/Tusimati)
 
 (if
  (or
