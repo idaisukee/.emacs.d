@@ -60,6 +60,7 @@
 (el-get-bundle! elscreen)
 (el-get-bundle! emacsmirror/rainbow-mode)
 (el-get-bundle! Fanael/rainbow-delimiters)
+(el-get-bundle oneKelvinSmith/monokai-emacs)
 
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
@@ -68,6 +69,7 @@
 (el-get-bundle! idaisukee/Iriewoka)
 (el-get-bundle! idaisukee/Sinsimitu)
 (el-get-bundle! idaisukee/Siyakusiyomahe)
+(el-get-bundle! idaisukee/Simituekimahe)
 
 (if
  (or

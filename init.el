@@ -15,7 +15,6 @@
         'misc-init
         'my-function-init
         'alias-init
-        'face-init
         'whitespace-init
         'shell-mode-init
         'skk-init
@@ -40,6 +39,7 @@
         'stripe-buffer-init
         'avy-migemo-init
         'rainbow-delimiters-init
+        'theme-init
         )
     'require)
 (ieremii-prepare-grep)

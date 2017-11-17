@@ -1,6 +1,3 @@
-(load-theme 'deeper-blue t)
-
-
 (defun incr-height (int)
  (setq height (+ height int))
  (init-face)
