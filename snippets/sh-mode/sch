@@ -2,4 +2,4 @@
 # name: sch
 # key: sch
 # --
-apt-cache search
+apt-cache search 

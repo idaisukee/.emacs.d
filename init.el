@@ -40,6 +40,7 @@
         'rainbow-delimiters-init
         'theme-init
 ;;;        'powerline-init
+        'direx-init
         )
     'require)
 
@@ -47,4 +48,6 @@
 (powerline-Akihamiti)
 
 (require 'Tusimati)
+
+(require 'Nisikuho)
 (ieremii-prepare-grep)

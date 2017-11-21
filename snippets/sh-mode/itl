@@ -2,5 +2,4 @@
 # name: itl
 # key: itl
 # --
-sudo apt-get install $1
-
+sudo apt-get install 
