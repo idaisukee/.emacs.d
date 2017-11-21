@@ -40,6 +40,7 @@
         'rainbow-delimiters-init
         'theme-init
 ;;;        'powerline-init
+        'direx-init
         )
     'require)
 
