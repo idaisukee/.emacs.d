@@ -61,6 +61,8 @@
 (el-get-bundle! emacsmirror/rainbow-mode)
 (el-get-bundle! Fanael/rainbow-delimiters)
 (el-get-bundle oneKelvinSmith/monokai-emacs)
+(el-get-bundle jaypei/emacs-neotree)
+(require 'neotree)
 
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
