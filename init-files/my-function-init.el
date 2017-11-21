@@ -313,10 +313,6 @@ article:
  (interactive)
  (insert "・"))
 
-(defun ieremii-delete-git-lock nil
-    (interactive)
-    (shell-command (s-concat "rm " (locate-dominating-file (file-truename buffer-file-name) ".git") ".git/index.lock")))
-
 (defun ieremii-typeset nil
     (interactive)
     (when buffer-file-name
