@@ -79,11 +79,11 @@
 (el-get-bundle! idaisukee/Aisometiyau)
 
 (if
- (or
-  (string= emacs-version "24.5.1")
-  (string= emacs-version "25.2.2")
-  (string= emacs-version "25.3.2"))
- (el-get-bundle! magit))
+    (or
+     (string= emacs-version "24.5.1")
+     (string= emacs-version "25.2.2")
+     (string= emacs-version "25.3.2"))
+    (el-get-bundle! magit))
 
 (if
  (string= emacs-version "24.5.1")
