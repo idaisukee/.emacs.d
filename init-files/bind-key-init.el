@@ -84,6 +84,7 @@
     ("M-g" . magit-status)
     ("M-j" . other-window)
     ("M-k" . delete-other-windows)
+    ("M-l" . ieremii-open-junk-file)
     ("M-m" . helm-mini)
     ("M-n" . ksu-next)
     ("M-o" . find-file-at-point)
