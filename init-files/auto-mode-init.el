@@ -2,6 +2,7 @@
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . coffee-mode))
 
 (add-to-list 'auto-mode-alist '("\\.scratch\\'" . lisp-interaction-mode))
+(add-to-list 'auto-mode-alist '("\\.scr\\'" . lisp-interaction-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.zsh\\'" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.ctp\\'"   . web-mode))
