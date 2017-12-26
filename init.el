@@ -47,7 +47,8 @@
 (require 'Akihamiti)
 (powerline-Akihamiti)
 
-(require 'Tusimati)
 
 (require 'Nisikuho)
 (ieremii-prepare-grep)
+
+(require 'Tusimati)
