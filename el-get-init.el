@@ -63,6 +63,9 @@
 (el-get-bundle oneKelvinSmith/monokai-emacs)
 (el-get-bundle jaypei/emacs-neotree)
 (require 'neotree)
+(el-get-bundle company-mode/company-mode)
+(el-get-bundle pitkali/pos-tip)
+(el-get-bundle expez/company-quickhelp)
 
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)

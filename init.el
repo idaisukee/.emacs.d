@@ -32,7 +32,7 @@
         'css-mode-init
         'git-gutter-init
         'hiyositiyau
-        'auto-complete-init
+;;;        'auto-complete-init
         'popwin-init
         'anzu-init
         'stripe-buffer-init
@@ -41,6 +41,7 @@
         'theme-init
 ;;;        'powerline-init
         'direx-init
+        'company-mode-init
         )
     'require)
 
