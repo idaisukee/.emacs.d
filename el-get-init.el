@@ -66,6 +66,8 @@
 (el-get-bundle company-mode/company-mode)
 (el-get-bundle pitkali/pos-tip)
 (el-get-bundle expez/company-quickhelp)
+(el-get-bundle! nonsequitur/inf-ruby) 
+(el-get-bundle! dgutov/robe)
 
 (el-get-bundle! idaisukee/Yunoki)
 (el-get-bundle! idaisukee/Kenrituhitiyutukuwanmahe)
