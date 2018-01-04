@@ -21,6 +21,7 @@
      ("\\.py\\'" . "python %f")
      ("\\.rb\\'" . "ruby %f")
      ("\\.coffee\\'" . "coffee %f")
-     ("\\.js\\'" . "node %f")))))
+     ("\\.js\\'" . "node %f")
+     ("\\.scm\\'" . "gosh %f")))))
 
 (provide 'smart-compile-init)
