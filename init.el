@@ -42,6 +42,7 @@
 ;;;        'powerline-init
         'direx-init
         'company-mode-init
+        'recentf-init
         )
     'require)
 
