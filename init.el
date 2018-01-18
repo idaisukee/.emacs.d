@@ -6,7 +6,10 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/init-files/")
 
+(require 'popup-init)
+
 (require 'el-get-init)
+
 
 (-each
     (list
@@ -55,8 +58,3 @@
 
 (require 'Tusimati)
 
-(setq popup-menu-keymap
-  (let ((map (make-sparse-keymap)))
-    (define-key map "\M-h"      'popup-next)
-    (define-key map "\M-t"      'popup-previous)
-    map))
