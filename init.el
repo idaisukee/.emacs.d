@@ -53,3 +53,9 @@
 (ieremii-prepare-grep)
 
 (require 'Tusimati)
+
+(setq popup-menu-keymap
+  (let ((map (make-sparse-keymap)))
+    (define-key map "\M-h"      'popup-next)
+    (define-key map "\M-t"      'popup-previous)
+    map))
