@@ -100,6 +100,7 @@
     ("M-N" . ksu-new-dwim)
     ("M-O" . helm-for-files)
     ("M-W" . revert-buffer)
+    ("M-/" . helm-dabbrev)
     ("M-<SPC>" . git-complete)
     ("S-<muhenkan>" . delete-window)
     )
